@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_mess",
-    "path":"sprites/spr_mess/spr_mess.yy",
+    "name":"spr_trash_game_top",
+    "path":"sprites/spr_trash_game_top/spr_trash_game_top.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -37,17 +37,17 @@ if (instance_exists(obj_button4_pressed)) {
         instance_destroy(obj_button9_pressed);
     }
 }
-*/
 
+*/
 if (instance_exists(obj_button1_pressed)) {
-    button1 = 1;
+    correctCode++;
     if (instance_exists(obj_button9_pressed)) {
-        button2 = 9;
+        correctCode++;
         if (instance_exists(obj_button5_pressed)) {
-            button3 = 5;
+            correctCode++;
             if (instance_exists(obj_button4_pressed)) {
-                button4 = 4;
-                if ((button1 * button2 / button3 - button4) = (1 * 9 / 5 - 4)){
+                correctCode++;
+                if (correctCode == 4){
                     room_goto(rm_safe_open);
                 }
             }
@@ -66,3 +66,5 @@ if (instance_exists(obj_button1_pressed)) {
 else {
     exit;
 }
+
+
