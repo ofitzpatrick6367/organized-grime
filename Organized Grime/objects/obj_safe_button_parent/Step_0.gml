@@ -37,8 +37,9 @@ if (instance_exists(obj_button4_pressed)) {
         instance_destroy(obj_button9_pressed);
     }
 }
-
 */
+
+
 if (instance_exists(obj_button1_pressed)) {
     correctCode++;
     if (instance_exists(obj_button9_pressed)) {
@@ -66,5 +67,3 @@ if (instance_exists(obj_button1_pressed)) {
 else {
     exit;
 }
-
-

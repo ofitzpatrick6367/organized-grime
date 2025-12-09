@@ -41,10 +41,17 @@ else if (instance_exists(obj_safe) && distance_to_object(obj_safe) < 8 && keyboa
     _switcher.player_data = self;
     _switcher.original_room = room;
 
-    room_goto(rm_safe)
+    room_goto(rm_safe);
 }
 
 else if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && keyboard_check(ord("E")))
 {
-    
+     if (instance_exists(obj_room_switcher)) exit;
+
+    var _switcher = instance_create_depth(0, 0, 0, obj_room_switcher);
+
+    _switcher.player_data = self;
+    _switcher.original_room = room;
+
+    room_goto(rm_fridge_open);
 }

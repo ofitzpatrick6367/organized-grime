@@ -9,7 +9,3 @@ five = false;
 four = false;
 
 correctCode = 0;
-
-if (room == rm_safe) {
-    code = 1954;
-}
