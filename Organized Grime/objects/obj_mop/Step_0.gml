@@ -11,7 +11,7 @@ if (this.can_move == true)
 
 if (this.can_move == false) 
 {
-    if (this.y < 100)
+    if (this.y < 120)
         this.y = this.y + 3;
     
 }
