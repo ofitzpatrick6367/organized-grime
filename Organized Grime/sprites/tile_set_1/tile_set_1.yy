@@ -2,15 +2,9 @@
   "$GMSprite":"",
   "%Name":"tile_set_1",
   "bboxMode":0,
-<<<<<<< Updated upstream
-  "bbox_bottom":255,
-  "bbox_left":0,
-  "bbox_right":239,
-=======
   "bbox_bottom":254,
   "bbox_left":0,
   "bbox_right":223,
->>>>>>> Stashed changes
   "bbox_top":16,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -28,7 +22,6 @@
   "gridX":0,
   "gridY":0,
   "height":256,
->>>>>>> Stashed changes
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"9a55f06e-b871-4722-9433-f19dd0bf9b64","blendMode":0,"displayName":"default","isLocked":false,"name":"9a55f06e-b871-4722-9433-f19dd0bf9b64","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
