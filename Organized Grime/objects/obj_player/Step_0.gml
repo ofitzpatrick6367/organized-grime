@@ -2,7 +2,7 @@
 var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
-move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe, fridge, stair], undefined, undefined, undefined, move_speed, move_speed);
+move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe, fridge, stair, dogbed], undefined, undefined, undefined, move_speed, move_speed);
 
 if (_hor != 0 or _ver != 0)
 {
@@ -46,7 +46,7 @@ else if (instance_exists(obj_safe) && distance_to_object(obj_safe) < 8 && keyboa
 
 else if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && keyboard_check(ord("E")))
 {
-     if (instance_exists(obj_room_switcher)) exit;
+    if (instance_exists(obj_room_switcher)) exit;
 
     var _switcher = instance_create_depth(0, 0, 0, obj_room_switcher);
 
