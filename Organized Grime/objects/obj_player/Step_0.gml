@@ -32,7 +32,7 @@ move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe
         else if (sprite_index == spr_player_walk_down) sprite_index = spr_player_idle_down;
         else if (sprite_index == spr_player_walk_up) sprite_index = spr_player_idle_up;
     }
-}
+
 
 if (instance_exists(obj_mess) && distance_to_object(obj_mess) < 8 && keyboard_check(ord("E")))
 {
