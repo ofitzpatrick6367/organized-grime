@@ -10,6 +10,8 @@ stair = obj_stair_side;
 dogbed = obj_dog_bed;
 level_one_npc = husband_npc;
 level_one_npc_2 = wife_npc;
+desk = obj_desk_with_check;
+swivel_chair = obj_swivel_chair;
 
 
 player = self;
