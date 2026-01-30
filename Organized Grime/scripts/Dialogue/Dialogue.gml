@@ -1,36 +1,22 @@
-function create_dialogue(_messages){
-    if (instance_exists(obj_dialogue)) return;
+function Dialogue() constructor {
+    
+    _dialogs = [];
+    
+    add = function(_sprite, _message) {
+        array_push(_dialogs, {
+            sprite: _sprite,
+            message: _message,
+        });
+    }
+    
+    pop = function() {
+        var _t = array_first(_dialogs);
+        array_delete(_dialogs, 0, 1);
         
-    var _inst = instance_create_depth(0, 0, 0, obj_dialogue);
-    _inst.messages = _messages;
-    _inst.current_message = 0;
+        return _t;
+    }
+    
+    count = function() {
+        return array_length(_dialogs);
+    }
 }
-
-char_colors = {
-    "Congrats": c_yellow,
-    "npc guy": c_yellow,
-    "npc NUMBER 2": c_aqua
-}
-
-welcome_dialogue = [
-{
-    name: "npc guy",
-    msg: "welcome"
-},
-{
-    name: "npc NUMBER 2",
-    msg: "thanks"
-},
-{
-    name: "npc guy",
-    msg: "woag"
-},
-{
-    name: "npc NUMBER 2",
-    msg: "yeehaw test"
-},
-{
-    name: "npc guy",
-    msg: "yep"
-}
-]
