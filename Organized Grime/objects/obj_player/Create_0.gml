@@ -8,6 +8,8 @@ safe = obj_safe;
 fridge = obj_fridge;
 stair = obj_stair_side;
 dogbed = obj_dog_bed;
+level_one_npc = husband_npc;
+level_one_npc_2 = wife_npc;
 
 
 player = self;

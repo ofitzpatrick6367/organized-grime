@@ -14,9 +14,7 @@ else {
 var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
-if (can_move == true) {
-    
-    move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe, fridge, stair, dogbed], undefined, undefined, undefined, move_speed, move_speed);
+move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe, fridge, stair, dogbed, level_one_npc, level_one_npc_2], undefined, undefined, undefined, move_speed, move_speed);
 
 
     if (_hor != 0 or _ver != 0)
@@ -70,6 +68,11 @@ else if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && ke
     _switcher.original_room = room;
 
     room_goto(rm_fridge_open);
+}
+
+else if (instance_exists(obj_desk_with_check) && distance_to_object(obj_desk_with_check) < 8 && keyboard_check(ord("E")))
+{
+    obj_desk_with_check.sprite_index = spr_office_desk_without_check;
 }
 
 else if (instance_exists(obj_dialog_starter) && distance_to_object(obj_dialog_starter) < 8 && keyboard_check(ord("E")) && !instance_exists(obj_dialogue_parent))
