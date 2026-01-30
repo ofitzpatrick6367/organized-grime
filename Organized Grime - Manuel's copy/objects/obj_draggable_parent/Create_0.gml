@@ -1,0 +1,1 @@
+this.can_move = false;   
