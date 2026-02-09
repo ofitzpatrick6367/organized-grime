@@ -17,8 +17,8 @@
     {"$GMSpriteFrame":"","%Name":"ca1bdb3c-be4c-4abb-8641-f386033ea51a","name":"ca1bdb3c-be4c-4abb-8641-f386033ea51a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"ccf6ded5-8611-4282-aa3e-0cf893503cdf","name":"ccf6ded5-8611-4282-aa3e-0cf893503cdf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":16,
+  "gridY":26,
   "height":32,
   "HTile":false,
   "layers":[
@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Player",
-    "path":"folders/Sprites/Player.yy",
+    "name":"Player (Full)",
+    "path":"folders/Sprites/Player/Player (Full).yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
