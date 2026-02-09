@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"husband_npc",
+  "%Name":"obj_sus_meter",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"husband_npc",
+  "name":"obj_sus_meter",
   "overriddenProperties":[],
   "parent":{
-    "name":"Level One NPC's",
-    "path":"folders/Objects/Level One NPC's.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_one_husband_idle_up",
-    "path":"sprites/spr_one_husband_idle_up/spr_one_husband_idle_up.yy",
+    "name":"spr_sus_meter_0",
+    "path":"sprites/spr_sus_meter_0/spr_sus_meter_0.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,5 +1,8 @@
 move_speed = 1;
 can_move = true;
+house_1_clean = false;
+house_1_kitchen_clean = false;
+house_1_fridge_clean = false;
 
 tilemap = layer_tilemap_get_id("Tiles_Col"); 
 mess = obj_mess;
