@@ -13,6 +13,8 @@ level_one_npc_2 = wife_npc;
 desk = obj_desk_with_check;
 swivel_chair = obj_swivel_chair;
 bush = obj_bush;
+fence = obj_fence;
+
 
 
 player = self;

@@ -6,8 +6,8 @@
   "name":"obj_button1_pressed",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Buttons",
+    "path":"folders/Objects/Buttons.yy",
   },
   "parentObjectId":{
     "name":"obj_safe_button_parent",

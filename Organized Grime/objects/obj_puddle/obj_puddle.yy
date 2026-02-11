@@ -8,8 +8,8 @@
   "name":"obj_puddle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Trash Minigame",
+    "path":"folders/Objects/Trash Minigame.yy",
   },
   "parentObjectId":null,
   "persistent":false,

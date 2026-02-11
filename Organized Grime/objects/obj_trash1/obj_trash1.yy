@@ -9,8 +9,8 @@
   "name":"obj_trash1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Trash Minigame",
+    "path":"folders/Objects/Trash Minigame.yy",
   },
   "parentObjectId":{
     "name":"obj_draggable_parent",

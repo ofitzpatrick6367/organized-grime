@@ -6,8 +6,8 @@
   "name":"obj_fridge",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Fridge Minigame",
+    "path":"folders/Objects/Fridge Minigame.yy",
   },
   "parentObjectId":null,
   "persistent":false,

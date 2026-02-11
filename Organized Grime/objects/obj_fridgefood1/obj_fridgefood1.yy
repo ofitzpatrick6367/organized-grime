@@ -9,8 +9,8 @@
   "name":"obj_fridgefood1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Fridge Minigame",
+    "path":"folders/Objects/Fridge Minigame.yy",
   },
   "parentObjectId":{
     "name":"obj_draggable_parent",
