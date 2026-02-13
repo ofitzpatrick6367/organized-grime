@@ -1,6 +1,6 @@
 dialog = new Dialogue();
 
-key_next = vk_tab;
+key_next = ord("E");
 
 showing_dialog = false;
 

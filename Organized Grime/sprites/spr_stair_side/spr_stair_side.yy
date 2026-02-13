@@ -1,9 +1,9 @@
 {
   "$GMSprite":"",
   "%Name":"spr_stair_side",
-  "bboxMode":0,
-  "bbox_bottom":15,
-  "bbox_left":0,
+  "bboxMode":2,
+  "bbox_bottom":16,
+  "bbox_left":-6,
   "bbox_right":2,
   "bbox_top":0,
   "collisionKind":1,

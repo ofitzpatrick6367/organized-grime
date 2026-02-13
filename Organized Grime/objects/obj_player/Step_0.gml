@@ -11,26 +11,28 @@ else {
     can_move = true;
 }
 
-var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+if (can_move == true) {
+    var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+    var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
 move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe, fridge, stair, dogbed, level_one_npc, level_one_npc_2, desk, swivel_chair, bush, fence], undefined, undefined, undefined, move_speed, move_speed);
 
 
-    if (_hor != 0 or _ver != 0)
-    {
-        if (_ver > 0) sprite_index = spr_player_walk_down; 
-        else if (_ver < 0) sprite_index = spr_player_walk_up;
-        else if (_hor > 0) sprite_index = spr_player_walk_right;
-        else if (_hor < 0) sprite_index = spr_player_walk_left;
+        if (_hor != 0 or _ver != 0)
+        {
+            if (_ver > 0) sprite_index = spr_player_walk_down; 
+            else if (_ver < 0) sprite_index = spr_player_walk_up;
+            else if (_hor > 0) sprite_index = spr_player_walk_right;
+            else if (_hor < 0) sprite_index = spr_player_walk_left;
             
-    }
-    else
-    {
-        if (sprite_index == spr_player_walk_right) sprite_index = spr_player_idle_right;
-        else if (sprite_index == spr_player_walk_left) sprite_index = spr_player_idle_left;
-        else if (sprite_index == spr_player_walk_down) sprite_index = spr_player_idle_down;
-        else if (sprite_index == spr_player_walk_up) sprite_index = spr_player_idle_up;
+        }
+        else
+        {
+            if (sprite_index == spr_player_walk_right) sprite_index = spr_player_idle_right;
+            else if (sprite_index == spr_player_walk_left) sprite_index = spr_player_idle_left;
+            else if (sprite_index == spr_player_walk_down) sprite_index = spr_player_idle_down;
+            else if (sprite_index == spr_player_walk_up) sprite_index = spr_player_idle_up;
+        }
     }
 
 
@@ -70,12 +72,30 @@ else if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && ke
     room_goto(rm_fridge_open);
 }
 
+
 else if (instance_exists(obj_desk_with_check) && distance_to_object(obj_desk_with_check) < 8 && keyboard_check(ord("E")))
 {
     obj_desk_with_check.sprite_index = spr_office_desk_without_check;
 }
 
-else if (instance_exists(obj_dialog_starter) && distance_to_object(obj_dialog_starter) < 8 && keyboard_check(ord("E")) && !instance_exists(obj_dialogue_parent))
+
+//cleaning checks
+if (room == rm_cleaning and instance_exists(obj_minigame_win)) { 
+    house_1_kitchen_clean = true;
+}
+ 
+if (room == rm_fridge_closed) {
+    house_1_fridge_clean = true;
+}
+
+if (room == Room1 and house_1_fridge_clean == true and house_1_kitchen_clean == true) {
+    house_1_fridge_clean = true;
+}
+
+
+//dialogue 
+if (house_1_clean == true and player.y < 207 and !instance_exists(obj_dialogue_parent))
 {
+    player.y += 1;
     instance_create_depth(0, 0, 0, obj_dialog_sample_a);
 }
