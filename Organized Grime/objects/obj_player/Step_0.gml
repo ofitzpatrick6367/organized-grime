@@ -99,3 +99,7 @@ if (house_1_clean == true and player.y < 207 and !instance_exists(obj_dialogue_p
     player.y += 1;
     instance_create_depth(0, 0, 0, obj_dialog_sample_a);
 }
+
+if (keyboard_check(ord("P"))) {
+    instance_create_depth(0, 0, layer_get_depth("Instances"), obj_sus_dialogue);
+}

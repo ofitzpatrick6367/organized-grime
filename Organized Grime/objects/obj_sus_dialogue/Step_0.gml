@@ -9,7 +9,8 @@ if (showing_dialog == false) {
 }
 
 else {
-    instance_create_depth(0, 0, 0, obj_sus_button);
+    instance_create_depth(0, 0, layer_get_depth("Instances"), obj_sus_button);
+    instance_create_depth(0, 0, layer_get_depth("Instances"), obj_not_sus_button);
     if (keyboard_check_released(key_next)) {
         showing_dialog = false;
         alpha = 0;

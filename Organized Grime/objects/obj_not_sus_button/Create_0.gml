@@ -1,8 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
-text = "(1)  suspicius option"
+text = "(2)  not suspicious option"
 
-choice_button = 1;
+choice_button = 2;
 
 showing_button = true;

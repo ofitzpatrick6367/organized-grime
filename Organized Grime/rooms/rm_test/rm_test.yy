@@ -1,15 +1,15 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_sus_meter_test",
+  "%Name":"rm_test",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_4FCB0810","path":"rooms/rm_sus_meter_test/rm_sus_meter_test.yy",},
-    {"name":"inst_7B9D0B12","path":"rooms/rm_sus_meter_test/rm_sus_meter_test.yy",},
-    {"name":"inst_5524828A","path":"rooms/rm_sus_meter_test/rm_sus_meter_test.yy",},
-    {"name":"inst_7A7C6D05","path":"rooms/rm_sus_meter_test/rm_sus_meter_test.yy",},
+    {"name":"inst_4FCB0810","path":"rooms/rm_test/rm_test.yy",},
+    {"name":"inst_7B9D0B12","path":"rooms/rm_test/rm_test.yy",},
+    {"name":"inst_5524828A","path":"rooms/rm_test/rm_test.yy",},
+    {"name":"inst_7A7C6D05","path":"rooms/rm_test/rm_test.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -29,7 +29,7 @@
     {"$GMRTileLayer":"","%Name":"Tiles_Back","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Back","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[-609,-2147483648,-16,103,-70,-2147483648,-16,103,-70,-2147483648,-16,103,-70,-2147483648,-16,103,-70,-2147483648,-16,103,-3159,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"Background","path":"sprites/Background/Background.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
-  "name":"rm_sus_meter_test",
+  "name":"rm_test",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",
