@@ -3,7 +3,6 @@ can_move = true;
 house_1_clean = false;
 house_1_kitchen_clean = false;
 house_1_fridge_clean = false;
-times_up_stairs = 0;
 
 tilemap = layer_tilemap_get_id("Tiles_Col"); 
 mess = obj_mess;
@@ -16,10 +15,6 @@ level_one_npc = husband_npc;
 level_one_npc_2 = wife_npc;
 desk = obj_desk_with_check;
 swivel_chair = obj_swivel_chair;
-bush = obj_bush;
-fence = obj_fence;
-kitchen = obj_minigame_win;
-
 
 
 player = self;

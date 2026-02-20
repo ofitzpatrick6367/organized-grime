@@ -132,6 +132,7 @@
     {"id":{"name":"obj_sus_meter","path":"objects/obj_sus_meter/obj_sus_meter.yy",},},
     {"id":{"name":"obj_swivel_chair","path":"objects/obj_swivel_chair/obj_swivel_chair.yy",},},
     {"id":{"name":"obj_temp","path":"objects/obj_temp/obj_temp.yy",},},
+    {"id":{"name":"obj_test_player","path":"objects/obj_test_player/obj_test_player.yy",},},
     {"id":{"name":"obj_trash_bin","path":"objects/obj_trash_bin/obj_trash_bin.yy",},},
     {"id":{"name":"obj_trash1","path":"objects/obj_trash1/obj_trash1.yy",},},
     {"id":{"name":"obj_trash2","path":"objects/obj_trash2/obj_trash2.yy",},},

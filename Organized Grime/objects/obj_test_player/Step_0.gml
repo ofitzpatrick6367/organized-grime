@@ -15,7 +15,7 @@ if (can_move == true) {
     var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
     var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
-move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe, fridge, stair, dogbed, level_one_npc, level_one_npc_2, desk, swivel_chair, bush, fence], undefined, undefined, undefined, move_speed, move_speed);
+    move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe, fridge, stair, dogbed, level_one_npc, level_one_npc_2, desk, swivel_chair], undefined, undefined, undefined, move_speed, move_speed);
 
 
         if (_hor != 0 or _ver != 0)
@@ -79,38 +79,14 @@ else if (instance_exists(obj_desk_with_check) && distance_to_object(obj_desk_wit
 }
 
 
-//cleaning checks
-
-if (house_1_kitchen_clean == true) {
-    house_1_clean = true;
-}
-
 
 //dialogue 
-if (house_1_clean = false and player.y < 207 and !instance_exists(obj_dialogue_parent))
+if (room == Room1 and player.y < 207 and !instance_exists(obj_dialogue_parent))
 {
-    times_up_stairs += 1;
     player.y += 1;
     instance_create_depth(0, 0, 0, obj_dialog_sample_a);
-    if (times_up_stairs > 1) {
-        if (obj_sus_meter.sprite_index == spr_sus_meter_99) {
-            obj_sus_meter.sprite_index = spr_sus_meter_100;
-        }
-        else if (obj_sus_meter.sprite_index == spr_sus_meter_75) {
-            obj_sus_meter.sprite_index = spr_sus_meter_99;
-        }
-        else if (obj_sus_meter.sprite_index == spr_sus_meter_50) {
-            obj_sus_meter.sprite_index = spr_sus_meter_75;
-        }
-        else if (obj_sus_meter.sprite_index == spr_sus_meter_25) {
-            obj_sus_meter.sprite_index = spr_sus_meter_50;
-        }
-        else if (obj_sus_meter.sprite_index == spr_sus_meter_0) {
-            obj_sus_meter.sprite_index = spr_sus_meter_25;
-        }
-    }
 }
 
-if (instance_exists(husband_npc) && distance_to_object(obj_fridge) < 8 && keyboard_check(ord("E"))) {
-    instance_create_depth(0, 0, layer_get_depth("Instances"), obj_sus_dialogue);
+else if (instance_exists(obj_dialog_starter) and distance_to_object(obj_dialog_starter) < 8 and keyboard_check(ord("E"))) {
+    instance_create_depth(0, 0, 0, obj_sus_dialogue);
 }
