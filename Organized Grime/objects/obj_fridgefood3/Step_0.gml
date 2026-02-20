@@ -27,6 +27,7 @@ else{
 	if((this.x > 98 and this.x < 132) and (this.y > -76 and this.y < 116)){	
 		this.x = 112;
 		this.y = 96;
+        obj_fridge_closed.threecorrect = true;
 	}
 	
 	else{

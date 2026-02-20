@@ -23,6 +23,7 @@ else{
 	if((this.x > 60 and this.x < 100) and (this.y > 44 and this.y < 84)){	
 		this.x = 80;
 		this.y = 64;
+        obj_fridge_closed.onecorrect = true;
 	}
 	
 	else{

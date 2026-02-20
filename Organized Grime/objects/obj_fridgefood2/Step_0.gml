@@ -27,6 +27,7 @@ else{
 	if((this.x > 108 and this.x < 148) and (this.y > -4 and this.y < 34)){	
 		this.x = 128;
 		this.y = 16;
+        obj_fridge_closed.twocorrect = true;
 	}
 	
 	else{

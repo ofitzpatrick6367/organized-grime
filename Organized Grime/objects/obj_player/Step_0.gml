@@ -1,3 +1,6 @@
+house_1_kitchen_clean = obj_glove.house_1_kitchen_clean;
+house_1_fridge_clean = obj_glove.house_1_fridge_clean;
+
 
 if (instance_exists(obj_dialogue_parent)) {
     can_move = false;
@@ -79,15 +82,24 @@ else if (instance_exists(obj_desk_with_check) && distance_to_object(obj_desk_wit
 }
 
 
-//cleaning checks
+//checks
 
-if (house_1_kitchen_clean == true) {
+if (house_1_fridge_clean > 0) {
     house_1_clean = true;
+}
+
+if (keyboard_check(ord("N"))) {
+    night_time = true;
+}
+
+if (keyboard_check(ord("M"))) {
+    night_time = false;
 }
 
 
 //dialogue 
-if (house_1_clean = false and player.y < 207 and !instance_exists(obj_dialogue_parent))
+
+if (house_1_clean == false and player.y < 207 and !instance_exists(obj_dialogue_parent))
 {
     times_up_stairs += 1;
     player.y += 1;
@@ -111,6 +123,6 @@ if (house_1_clean = false and player.y < 207 and !instance_exists(obj_dialogue_p
     }
 }
 
-if (instance_exists(husband_npc) && distance_to_object(obj_fridge) < 8 && keyboard_check(ord("E"))) {
+if (instance_exists(husband_npc) && distance_to_object(husband_npc) < 8 && keyboard_check(ord("E"))) {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_sus_dialogue);
 }

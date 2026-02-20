@@ -7,3 +7,4 @@ if (mouse_check_button(mb_left)) {
 else {
     sprite_index = spr_glove_open;
 }
+
