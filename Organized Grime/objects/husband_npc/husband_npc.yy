@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_one_husband_idle_up",
-    "path":"sprites/spr_one_husband_idle_up/spr_one_husband_idle_up.yy",
+    "name":"spr_one_husband_idle_left",
+    "path":"sprites/spr_one_husband_idle_left/spr_one_husband_idle_left.yy",
   },
   "spriteMaskId":null,
   "visible":true,

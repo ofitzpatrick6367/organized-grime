@@ -9,8 +9,8 @@
   "name":"obj_not_sus_button",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Dialogue",
+    "path":"folders/Objects/Dialogue.yy",
   },
   "parentObjectId":{
     "name":"obj_dialogue_button2_parent",

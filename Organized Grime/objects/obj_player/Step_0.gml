@@ -84,7 +84,7 @@ else if (instance_exists(obj_desk_with_check) && distance_to_object(obj_desk_wit
 
 //checks
 
-if (house_1_fridge_clean > 0) {
+if (house_1_fridge_clean == true and house_1_kitchen_clean == true) {
     house_1_clean = true;
 }
 
@@ -99,11 +99,20 @@ if (keyboard_check(ord("M"))) {
 
 //dialogue 
 
+if (first_dialog == false and !instance_exists(obj_dialogue_parent)) {
+    instance_create_depth(0, 0, 0, obj_dialog_pregame);
+    first_dialog = true;
+}
+
+
+
 if (house_1_clean == false and player.y < 207 and !instance_exists(obj_dialogue_parent))
 {
-    times_up_stairs += 1;
     player.y += 1;
     instance_create_depth(0, 0, 0, obj_dialog_sample_a);
+    
+    times_up_stairs += 1;
+    
     if (times_up_stairs > 1) {
         if (obj_sus_meter.sprite_index == spr_sus_meter_99) {
             obj_sus_meter.sprite_index = spr_sus_meter_100;
@@ -125,4 +134,8 @@ if (house_1_clean == false and player.y < 207 and !instance_exists(obj_dialogue_
 
 if (instance_exists(husband_npc) && distance_to_object(husband_npc) < 8 && keyboard_check(ord("E"))) {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_sus_dialogue);
+}
+
+if (instance_exists(wife_npc) && distance_to_object(wife_npc) < 8 && keyboard_check(ord("E"))) {
+    instance_create_depth(0, 0, layer_get_depth("Instances"), obj_sus_dialogue_2);
 }

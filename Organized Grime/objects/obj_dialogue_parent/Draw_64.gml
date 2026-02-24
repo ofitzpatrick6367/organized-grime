@@ -31,7 +31,7 @@ if (showing_dialog == true) {
     
     draw_set_color(c_white);
     draw_set_font(Font1);
-    draw_text_ext(text_x, text_y, current_dialog.message, 16, display_get_gui_width() - 192);
+    draw_text_ext(text_x, text_y, current_dialog.message, 36, display_get_gui_width() - 192);
     
     alpha = lerp(alpha, 1, 0.06);
 }

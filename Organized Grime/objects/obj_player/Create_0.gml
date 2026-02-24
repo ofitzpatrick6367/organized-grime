@@ -5,6 +5,7 @@ house_1_kitchen_clean = 0;
 house_1_fridge_clean = 0;
 times_up_stairs = 0;
 night_time = false;
+first_dialog = false;
 
 tilemap = layer_tilemap_get_id("Tiles_Col"); 
 mess = obj_mess;

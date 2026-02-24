@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_dialog_sample_a",
+  "%Name":"obj_dialog_pregame",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_dialog_sample_a",
+  "name":"obj_dialog_pregame",
   "overriddenProperties":[],
   "parent":{
     "name":"Dialogue",
