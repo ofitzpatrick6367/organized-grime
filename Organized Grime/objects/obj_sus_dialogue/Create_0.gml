@@ -13,5 +13,5 @@ if (obj_player.house_1_clean == false) {
 if (obj_player.house_1_clean == true) {
     dialog.pop();
     dialog.pop();
-    dialog.add(spr_npc1_dialogue, "Feel free to grab that check now. It’s on the desk in the office.")
+    dialog.add(spr_npc1_dialogue, "Feel free to grab that check now. It\’s on the desk in the office.")
 }

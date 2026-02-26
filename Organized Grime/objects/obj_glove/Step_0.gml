@@ -8,3 +8,7 @@ else {
     sprite_index = spr_glove_open;
 }
 
+if (room == rm_safe_open){
+    safe_open = true;
+}
+

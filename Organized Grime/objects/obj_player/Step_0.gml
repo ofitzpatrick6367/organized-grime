@@ -84,6 +84,10 @@ else if (instance_exists(obj_desk_with_check) && distance_to_object(obj_desk_wit
 
 //checks
 
+if (room == rm_floor2) {
+    house_1_clean = true;
+}
+
 if (house_1_fridge_clean == true and house_1_kitchen_clean == true) {
     house_1_clean = true;
 }
@@ -99,9 +103,34 @@ if (keyboard_check(ord("M"))) {
 
 //dialogue 
 
-if (first_dialog == false and !instance_exists(obj_dialogue_parent)) {
+if (first_dialog == false and !instance_exists(obj_dialogue_parent) and room == Room1) {
     instance_create_depth(0, 0, 0, obj_dialog_pregame);
     first_dialog = true;
+}
+if (second_dialog == false and !instance_exists(obj_dialogue_parent) and room == rm_floor2) {
+    instance_create_depth(0, 0, 0, obj_dialogue_informant);
+    second_dialog = true;
+}
+
+if (safe_dialog == false and !instance_exists(obj_dialogue_parent) and room == rm_safe) {
+    instance_create_depth(0, 0, 0, obj_dialogue_informant);
+    safe_dialog = true;
+}
+
+if (open_safe_dialog = false and obj_glove.safe_open == true and !instance_exists(obj_dialogue_parent) and room == rm_floor2) {
+    instance_create_depth(0, 0, 0, obj_dialogue_informant);
+     open_safe_dialog = true;
+}
+
+if (instance_exists(obj_dog_bed) and distance_to_object(obj_dog_bed) < 8 and keyboard_check(ord("E")) and dogbed_dialog == false) {
+    instance_create_depth(0, 0, layer_get_depth("Instances"), obj_dialogue_dogbed);
+    dogbed_dialog = true;
+}
+
+if (house_1_fridge_clean == true and !instance_exists(obj_dialogue_parent) and fridge_dialog == false) {
+    instance_create_depth(0, 0, 0, obj_dialogue_informant);
+    player.y += 8;
+    fridge_dialog = true;
 }
 
 
