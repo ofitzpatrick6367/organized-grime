@@ -1,5 +1,6 @@
 house_1_kitchen_clean = obj_glove.house_1_kitchen_clean;
 house_1_fridge_clean = obj_glove.house_1_fridge_clean;
+end_cutscene = obj_glove.end_cutscene;
 
 
 if (instance_exists(obj_dialogue_parent)) {
@@ -100,6 +101,10 @@ if (keyboard_check(ord("M"))) {
     night_time = false;
 }
 
+if (keyboard_check(ord("C"))) {
+    house_1_clean = true;
+}
+
 
 //dialogue 
 
@@ -127,10 +132,24 @@ if (instance_exists(obj_dog_bed) and distance_to_object(obj_dog_bed) < 8 and key
     dogbed_dialog = true;
 }
 
-if (house_1_fridge_clean == true and !instance_exists(obj_dialogue_parent) and fridge_dialog == false) {
+if (room == Room1 and house_1_fridge_clean == true and !instance_exists(obj_dialogue_parent) and fridge_dialog == false) {
+    player.y += 16;
     instance_create_depth(0, 0, 0, obj_dialogue_informant);
-    player.y += 8;
     fridge_dialog = true;
+}
+
+if (room == Room1 and end_cutscene == true and !instance_exists(obj_dialogue_parent)) {
+    player.x = 192;
+    player.y = 336;
+    player.sprite_index = spr_player_idle_right;
+    
+    wife_npc.x = 304;
+    wife_npc.y = 320;
+    wife_npc.sprite_index = spr_one_wife_idle_left;
+    
+    instance_create_depth(0, 0, 0, obj_dialog_end);
+    obj_glove.end_cutscene = false;
+    end_cutscene = false;
 }
 
 

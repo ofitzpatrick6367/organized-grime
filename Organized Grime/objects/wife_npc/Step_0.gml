@@ -16,3 +16,10 @@ if (out_room == true) {
     this.y = 240;
     sprite_index = spr_one_wife_idle_down;
 }
+
+if (obj_player.end_cutscene == true) {
+    out_room = false;
+    wife_npc.x = 304;
+    wife_npc.y = 320;
+    wife_npc.sprite_index = spr_one_wife_idle_left;
+}

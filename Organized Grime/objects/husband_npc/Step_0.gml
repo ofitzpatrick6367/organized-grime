@@ -16,3 +16,10 @@ if (out_room == true) {
     this.y = 256;
     sprite_index = spr_one_husband_idle_up;
 }
+
+if (obj_player.end_cutscene == true) {
+    out_room = false;
+    husband_npc.x = 304;
+    husband_npc.y = 352;
+    husband_npc.sprite_index = spr_one_husband_idle_left;
+}

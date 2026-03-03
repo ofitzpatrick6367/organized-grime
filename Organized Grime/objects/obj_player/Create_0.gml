@@ -12,6 +12,7 @@ dogbed_dialog = false;
 second_dialog = false;
 safe_dialog = false;
 open_safe_dialog = false;
+end_cutscene = false;
 
 tilemap = layer_tilemap_get_id("Tiles_Col"); 
 mess = obj_mess;

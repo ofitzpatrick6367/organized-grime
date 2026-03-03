@@ -1,20 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sus_meter",
+  "%Name":"obj_dialog_end",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_sus_meter",
+  "name":"obj_dialog_end",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Dialogue",
+    "path":"folders/Objects/Dialogue.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"obj_dialogue_parent",
+    "path":"objects/obj_dialogue_parent/obj_dialogue_parent.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -31,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_sus_meter_0",
-    "path":"sprites/spr_sus_meter_0/spr_sus_meter_0.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
