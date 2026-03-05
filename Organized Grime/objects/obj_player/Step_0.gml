@@ -1,6 +1,6 @@
-house_1_kitchen_clean = obj_glove.house_1_kitchen_clean;
+/*house_1_kitchen_clean = obj_glove.house_1_kitchen_clean;
 house_1_fridge_clean = obj_glove.house_1_fridge_clean;
-end_cutscene = obj_glove.end_cutscene;
+end_cutscene = obj_glove.end_cutscene;*/
 
 
 if (instance_exists(obj_dialogue_parent)) {
@@ -122,11 +122,11 @@ if (safe_dialog == false and !instance_exists(obj_dialogue_parent) and room == r
     safe_dialog = true;
 }
 
-if (open_safe_dialog = false and obj_glove.safe_open == true and !instance_exists(obj_dialogue_parent) and room == rm_floor2) {
+/*if (open_safe_dialog = false and obj_glove.safe_open == true and !instance_exists(obj_dialogue_parent) and room == rm_floor2) {
     instance_create_depth(0, 0, 0, obj_dialogue_informant);
      open_safe_dialog = true;
 }
-
+*/
 if (instance_exists(obj_dog_bed) and distance_to_object(obj_dog_bed) < 8 and keyboard_check(ord("E")) and dogbed_dialog == false) {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_dialogue_dogbed);
     dogbed_dialog = true;
@@ -154,7 +154,7 @@ if (room == Room1 and end_cutscene == true and !instance_exists(obj_dialogue_par
 
 
 
-if (house_1_clean == false and player.y < 207 and !instance_exists(obj_dialogue_parent))
+if (room == Room1 and house_1_clean == false and player.y < 207 and !instance_exists(obj_dialogue_parent))
 {
     player.y += 1;
     instance_create_depth(0, 0, 0, obj_dialog_sample_a);
@@ -162,7 +162,7 @@ if (house_1_clean == false and player.y < 207 and !instance_exists(obj_dialogue_
     times_up_stairs += 1;
     
     if (times_up_stairs > 1) {
-        if (obj_sus_meter.sprite_index == spr_sus_meter_99) {
+       if (obj_sus_meter.sprite_index == spr_sus_meter_99) {
             obj_sus_meter.sprite_index = spr_sus_meter_100;
         }
         else if (obj_sus_meter.sprite_index == spr_sus_meter_75) {
