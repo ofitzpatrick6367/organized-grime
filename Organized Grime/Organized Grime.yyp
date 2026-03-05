@@ -338,9 +338,9 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"level_one_yard","path":"rooms/level_one_yard/level_one_yard.yy",},},
-    {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"rm_floor2","path":"rooms/rm_floor2/rm_floor2.yy",},},
+    {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"roomId":{"name":"rm_dialog_test","path":"rooms/rm_dialog_test/rm_dialog_test.yy",},},
     {"roomId":{"name":"rm_cleaning","path":"rooms/rm_cleaning/rm_cleaning.yy",},},
     {"roomId":{"name":"rm_safe","path":"rooms/rm_safe/rm_safe.yy",},},
