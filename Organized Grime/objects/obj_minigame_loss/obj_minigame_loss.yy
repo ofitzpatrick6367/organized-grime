@@ -1,13 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_timer",
+  "%Name":"obj_minigame_loss",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_timer",
+  "name":"obj_minigame_loss",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_timer_10",
-    "path":"sprites/spr_timer_10/spr_timer_10.yy",
+    "name":"spr_minigame_loss",
+    "path":"sprites/spr_minigame_loss/spr_minigame_loss.yy",
   },
   "spriteMaskId":null,
   "visible":true,

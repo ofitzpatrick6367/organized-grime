@@ -11,6 +11,7 @@ fridge_dialog = false;
 dogbed_dialog = false;
 second_dialog = false;
 safe_dialog = false;
+kitchen_clean_dialog = false;
 open_safe_dialog = false;
 end_cutscene = false;
 

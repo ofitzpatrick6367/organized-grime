@@ -14,4 +14,6 @@ tspeed = 60;
 
 alarm[0] = tspeed;
 
-sprite_index = eight;
+if (room == rm_cleaning) {
+    sprite_index = ten;
+}

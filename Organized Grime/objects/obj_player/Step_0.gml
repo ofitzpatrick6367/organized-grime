@@ -1,6 +1,6 @@
-/*house_1_kitchen_clean = obj_glove.house_1_kitchen_clean;
+house_1_kitchen_clean = obj_glove.house_1_kitchen_clean;
 house_1_fridge_clean = obj_glove.house_1_fridge_clean;
-end_cutscene = obj_glove.end_cutscene;*/
+end_cutscene = obj_glove.end_cutscene;
 
 
 if (instance_exists(obj_dialogue_parent)) {
@@ -40,7 +40,7 @@ move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe
     }
 
 
-if (instance_exists(obj_mess) && distance_to_object(obj_mess) < 8 && keyboard_check(ord("E")))
+if (instance_exists(obj_mess) && distance_to_object(obj_mess) < 8 && keyboard_check(ord("E")) and house_1_kitchen_clean == false)
 {
     if (instance_exists(obj_room_switcher)) exit;
 
@@ -64,7 +64,7 @@ else if (instance_exists(obj_safe) && distance_to_object(obj_safe) < 8 && keyboa
     room_goto(rm_safe);
 }
 
-else if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && keyboard_check(ord("E")))
+else if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && keyboard_check(ord("E")) and house_1_fridge_clean == false)
 {
     if (instance_exists(obj_room_switcher)) exit;
 
@@ -101,6 +101,10 @@ if (keyboard_check(ord("M"))) {
     night_time = false;
 }
 
+if (keyboard_check(ord("K"))) {
+    house_1_kitchen_clean = true;
+}
+
 if (keyboard_check(ord("C"))) {
     house_1_clean = true;
 }
@@ -120,6 +124,18 @@ if (second_dialog == false and !instance_exists(obj_dialogue_parent) and room ==
 if (safe_dialog == false and !instance_exists(obj_dialogue_parent) and room == rm_safe) {
     instance_create_depth(0, 0, 0, obj_dialogue_informant);
     safe_dialog = true;
+}
+
+if (instance_exists(obj_mess) && distance_to_object(obj_mess) < 8 && keyboard_check(ord("E")) and house_1_kitchen_clean == true) {
+    instance_create_depth(0, 0, layer_get_depth("Instances"), obj_dialog_already_clean);
+    player.y += 8;
+    sprite_index = spr_player_idle_down;
+}
+
+if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && keyboard_check(ord("E")) and house_1_fridge_clean == true) {
+    instance_create_depth(0, 0, layer_get_depth("Instances"), obj_dialog_already_clean);
+    player.y += 8;
+    sprite_index = spr_player_idle_down;
 }
 
 /*if (open_safe_dialog = false and obj_glove.safe_open == true and !instance_exists(obj_dialogue_parent) and room == rm_floor2) {

@@ -4,3 +4,7 @@ if (room == rm_cleaning) {
         obj_glove.house_1_kitchen_clean = true;
     }
 }
+
+if (image_alpha == 0) {
+    
+}

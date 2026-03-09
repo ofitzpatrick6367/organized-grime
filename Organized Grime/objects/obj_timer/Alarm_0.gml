@@ -1,3 +1,9 @@
+if (sprite_index == zero) {
+    obj_minigame_loss.image_alpha = 1;
+    obj_draggable_parent.image_alpha = 0;
+    obj_mop.image_alpha = 0;
+}
+
 if (sprite_index == one) {
     sprite_index = zero;
     alarm[0] = tspeed;
@@ -47,3 +53,4 @@ else if (sprite_index == ten) {
     sprite_index = nine;
     alarm[0] = tspeed;
 }
+
