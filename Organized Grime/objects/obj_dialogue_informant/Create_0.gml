@@ -4,7 +4,7 @@ event_inherited();
 fridge_dialogue = false;
 
 if (obj_glove.house_1_fridge_clean and fridge_dialogue == false) {
-    dialog.add(spr_informant_dialogue, "Hm. \'Code: 9541.\' Might be important.")
+    dialog.add(spr_informant_dialogue, "Hm. \'Code: 9541.\' Might be important. Go ahead and take that note.")
 }
 
 if (room == rm_floor2) {
