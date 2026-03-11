@@ -11,10 +11,17 @@ if (room == rm_floor2) {
     dialog.pop();
     dialog.add(spr_informant_dialogue, "Hey, looks like they keep a safe up here. Go ahead and check it out. It looks like it has a numerical code... maybe you've seen one of those around?")
     dialog.add(spr_informant_dialogue, "And when you DO get it open, don't take anything right away. You'd look too suspicious coming out of the office with full pockets.")
-    dialog.add(spr_informant_dialogue, "Just take the spare key in there and get out of the house for now.") 
+    dialog.add(spr_informant_dialogue, "Just take the spare key in there and the check and get out of the house for now.") 
 }
 
-if (room == rm_floor2 and obj_glove.safe_open == true) {
+if (room == rm_floor2 and obj_glove.safe_open == true and obj_glove.got_key == false) {
+    dialog.pop();
+    dialog.pop();
+    dialog.pop();
+    dialog.add(spr_informant_dialogue, "...You forgot to take the key.")    
+}
+
+if (room == rm_floor2 and obj_glove.safe_open == true and obj_glove.got_key == true) {
     dialog.pop();
     dialog.pop();
     dialog.pop();

@@ -101,10 +101,6 @@ if (keyboard_check(ord("M"))) {
     night_time = false;
 }
 
-if (keyboard_check(ord("K"))) {
-    house_1_kitchen_clean = true;
-}
-
 if (keyboard_check(ord("C"))) {
     house_1_clean = true;
 }
@@ -128,21 +124,21 @@ if (safe_dialog == false and !instance_exists(obj_dialogue_parent) and room == r
 
 if (instance_exists(obj_mess) && distance_to_object(obj_mess) < 8 && keyboard_check(ord("E")) and house_1_kitchen_clean == true) {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_dialog_already_clean);
-    player.y += 8;
     sprite_index = spr_player_idle_down;
+    player.y += 8;
 }
 
 if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && keyboard_check(ord("E")) and house_1_fridge_clean == true) {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_dialog_already_clean);
-    player.y += 8;
     sprite_index = spr_player_idle_down;
+    player.y += 8;
 }
 
-/*if (open_safe_dialog = false and obj_glove.safe_open == true and !instance_exists(obj_dialogue_parent) and room == rm_floor2) {
+if (open_safe_dialog = false and obj_glove.safe_open == true and !instance_exists(obj_dialogue_parent) and room == rm_floor2) {
     instance_create_depth(0, 0, 0, obj_dialogue_informant);
      open_safe_dialog = true;
 }
-*/
+
 if (instance_exists(obj_dog_bed) and distance_to_object(obj_dog_bed) < 8 and keyboard_check(ord("E")) and dogbed_dialog == false) {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_dialogue_dogbed);
     dogbed_dialog = true;

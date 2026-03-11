@@ -17,3 +17,7 @@ alarm[0] = tspeed;
 if (room == rm_cleaning) {
     sprite_index = ten;
 }
+
+else if (room == rm_fridge_open) {
+    sprite_index = four;
+}

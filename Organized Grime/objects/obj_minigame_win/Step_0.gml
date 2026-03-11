@@ -5,6 +5,8 @@ if (room == rm_cleaning) {
     }
 }
 
-if (image_alpha == 0) {
-    
+/* else if (room == rm_fridge_open) {
+    if (obj_fridge_closed.image_alpha == 1) {
+        image_alpha = 1;
+    }
 }

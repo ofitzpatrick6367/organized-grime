@@ -1,7 +1,16 @@
 if (sprite_index == zero) {
-    obj_minigame_loss.image_alpha = 1;
-    obj_draggable_parent.image_alpha = 0;
-    obj_mop.image_alpha = 0;
+    if (room == rm_cleaning) {
+        obj_minigame_loss.image_alpha = 1;
+        obj_draggable_parent.image_alpha = 0;
+        obj_mop.image_alpha = 0;
+    }
+    
+    if (room == rm_fridge_open) {
+        obj_minigame_loss.image_alpha = 1;
+        obj_fridgefood1.image_alpha = 0;
+        obj_fridgefood2.image_alpha = 0;
+        obj_fridgefood3.image_alpha = 0;
+    }
 }
 
 if (sprite_index == one) {
