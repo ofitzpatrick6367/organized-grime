@@ -24,3 +24,19 @@ if (room == Room1 and got_key == true and !instance_exists(obj_dialogue_parent))
     end_cutscene = true;
 }
 
+
+if (keyboard_check(ord("K"))) {
+    got_key = true;
+}
+
+if (keyboard_check(ord("C"))) {
+    got_crowbar = true;
+}
+
+if (keyboard_check(ord("L"))) {
+    got_light = true;
+}
+
+if (house_1_fridge_clean == true or keyboard_check(ord("N"))) {
+    got_note = true;
+}

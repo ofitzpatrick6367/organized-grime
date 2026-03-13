@@ -1,4 +1,7 @@
-if (1 == 1) {
+x = (camera_get_view_x(view_camera[0]) + 152) + 48;
+y = camera_get_view_y(view_camera[0]) + 152;
+
+if (obj_glove.got_crowbar == true) {
     sprite_index = spr_not_selected;
     
     if (keyboard_check(ord(select_key))) {

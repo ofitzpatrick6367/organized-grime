@@ -199,3 +199,6 @@ if (instance_exists(husband_npc) && distance_to_object(husband_npc) < 8 && keybo
 if (instance_exists(wife_npc) && distance_to_object(wife_npc) < 8 && keyboard_check(ord("E"))) {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_sus_dialogue_2);
 }
+
+
+// inventory actions
