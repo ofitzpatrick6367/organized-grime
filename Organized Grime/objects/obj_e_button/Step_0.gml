@@ -1,7 +1,7 @@
 this.x = player.x + 8;
 this.y = player.y - 17;
 
-if(instance_exists(interactible_obj) && distance_to_object(interactible_obj) < 15){
+if(instance_exists(interactible_obj) && distance_to_object(interactible_obj) < 10){
 
 	
 	show_debug_message(distance_to_object(interactible_obj));

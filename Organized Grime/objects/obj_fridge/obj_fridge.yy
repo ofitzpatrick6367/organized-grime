@@ -12,7 +12,10 @@
     "name":"Fridge Minigame",
     "path":"folders/Objects/Fridge Minigame.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_interactible",
+    "path":"objects/obj_interactible/obj_interactible.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
