@@ -16,7 +16,7 @@
     "name":"obj_inv_parent",
     "path":"objects/obj_inv_parent/obj_inv_parent.yy",
   },
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,

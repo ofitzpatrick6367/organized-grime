@@ -18,11 +18,11 @@ if (room == rm_safe_open){
 
 if (room == rm_safe_open and !instance_exists(obj_safe_key)) {
     got_key = true;
-}
+} 
 
-if (room == Room1 and got_key == true and !instance_exists(obj_dialogue_parent)) {
+/* if (room == Room1 and got_key == true and !instance_exists(obj_dialogue_parent)) {
     end_cutscene = true;
-}
+} */
 
 
 if (keyboard_check(ord("K"))) {

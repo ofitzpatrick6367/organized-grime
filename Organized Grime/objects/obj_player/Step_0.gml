@@ -150,7 +150,7 @@ if (room == Room1 and house_1_fridge_clean == true and !instance_exists(obj_dial
     fridge_dialog = true;
 }
 
-if (room == Room1 and end_cutscene == true and !instance_exists(obj_dialogue_parent)) {
+if (room == Room1 and end_cutscene == false and obj_glove.got_key == true and !instance_exists(obj_dialogue_parent)) {
     player.x = 192;
     player.y = 336;
     player.sprite_index = spr_player_idle_right;
@@ -160,8 +160,10 @@ if (room == Room1 and end_cutscene == true and !instance_exists(obj_dialogue_par
     wife_npc.sprite_index = spr_one_wife_idle_left;
     
     instance_create_depth(0, 0, 0, obj_dialog_end);
-    obj_glove.end_cutscene = false;
-    end_cutscene = false;
+    obj_glove.end_cutscene = true;
+    end_cutscene = true;
+    
+    if ()
 }
 
 

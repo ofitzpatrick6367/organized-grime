@@ -4,11 +4,7 @@ y = camera_get_view_y(view_camera[0]) + 152;
 if (obj_glove.got_note == true) {
     sprite_index = spr_not_selected;
     
-    if (!instance_exists(obj_dialogue_button1_parent)) {
-        selected = false;
-    }
-    
-    else if (keyboard_check(ord(select_key))) {
+    if (keyboard_check(ord(select_key))) {
         selected = true
     }
     
