@@ -33,4 +33,5 @@ kitchen = obj_minigame_win;
 
 
 
+
 player = self;
