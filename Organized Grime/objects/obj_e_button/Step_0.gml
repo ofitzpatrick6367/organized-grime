@@ -1,10 +1,10 @@
 this.x = player.x + 8;
 this.y = player.y - 17;
 
-if(instance_exists(interactible_obj) && distance_to_object(interactible_obj) < 10){
+if(instance_exists(interactible_obj) && distance_to_object(interactible_obj) < 0.0001){
 
 	
-	show_debug_message(distance_to_object(interactible_obj));
+	/*show_debug_message(distance_to_object(interactible_obj));*/
 	depth = -1000;
 	this.sprite_index = spr_e_spawn;
 	this.image_alpha = 1;

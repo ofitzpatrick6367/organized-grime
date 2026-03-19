@@ -1,8 +1,11 @@
 if (sprite_index == zero) {
     if (room == rm_cleaning) {
         obj_minigame_loss.image_alpha = 1;
-        obj_draggable_parent.image_alpha = 0;
         obj_mop.image_alpha = 0;
+		
+		if(instance_exists(obj_draggable_parent)){
+			obj_draggable_parent.image_alpha = 0;	
+		}
     }
     
     if (room == rm_fridge_open) {

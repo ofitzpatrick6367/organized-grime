@@ -44,6 +44,7 @@
     {"$GMFolder":"","%Name":"Fence","folderPath":"folders/Sprites/Fence.yy","name":"Fence","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fridge Food","folderPath":"folders/Sprites/Fridge Food.yy","name":"Fridge Food","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Grass","folderPath":"folders/Sprites/Grass.yy","name":"Grass","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Screen Transition","folderPath":"folders/Sprites/Screen Transition.yy","name":"Screen Transition","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Inventory","folderPath":"folders/Sprites/Inventory.yy","name":"Inventory","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level One NPC's","folderPath":"folders/Sprites/Level One NPC's.yy","name":"Level One NPC's","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Husband","folderPath":"folders/Sprites/Level One NPC's/Husband.yy","name":"Husband","resourceType":"GMFolder","resourceVersion":"2.0",},

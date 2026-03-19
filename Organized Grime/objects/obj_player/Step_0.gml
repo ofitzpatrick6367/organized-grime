@@ -162,6 +162,7 @@ if (room == Room1 and end_cutscene == false and obj_glove.got_key == true and !i
     instance_create_depth(0, 0, 0, obj_dialog_end);
     obj_glove.end_cutscene = true;
     end_cutscene = true;
+	night_time = true;
     
     /*if ()*/
 }
