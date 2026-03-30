@@ -9,4 +9,3 @@ select_key = 1;
 selected = false;
 
 sprite_index = spr_empty;
-

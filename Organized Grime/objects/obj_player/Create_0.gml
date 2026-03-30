@@ -15,6 +15,7 @@ safe_dialog = false;
 kitchen_clean_dialog = false;
 open_safe_dialog = false;
 end_cutscene = false;
+yard_dialog = false;
 
 tilemap = layer_tilemap_get_id("Tiles_Col"); 
 mess = obj_mess;

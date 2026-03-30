@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_black",
+  "%Name":"obj_door_go",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_black",
+  "name":"obj_door_go",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Background",
-    "path":"sprites/Background/Background.yy",
+    "name":"spr_red_carpet",
+    "path":"sprites/spr_red_carpet/spr_red_carpet.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,0 +1,1 @@
+black = obj_black;

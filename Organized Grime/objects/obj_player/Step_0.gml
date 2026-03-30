@@ -136,7 +136,7 @@ if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && keyboar
 
 if (open_safe_dialog = false and obj_glove.safe_open == true and !instance_exists(obj_dialogue_parent) and room == rm_floor2) {
     instance_create_depth(0, 0, 0, obj_dialogue_informant);
-     open_safe_dialog = true;
+    open_safe_dialog = true;
 }
 
 if (instance_exists(obj_dog_bed) and distance_to_object(obj_dog_bed) < 8 and keyboard_check(ord("E")) and dogbed_dialog == false) {
@@ -162,9 +162,12 @@ if (room == Room1 and end_cutscene == false and obj_glove.got_key == true and !i
     instance_create_depth(0, 0, 0, obj_dialog_end);
     obj_glove.end_cutscene = true;
     end_cutscene = true;
-	night_time = true;
-    
-    /*if ()*/
+}
+
+if (room == level_one_yard and yard_dialog == false and !instance_exists(obj_dialogue_parent)) {
+    instance_create_depth(0, 0, 0, obj_dialogue_informant);
+    yard_dialog = true;
+    house_1_clean = true;
 }
 
 
