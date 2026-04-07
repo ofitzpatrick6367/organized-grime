@@ -238,7 +238,20 @@ if (instance_exists(wife_npc) && distance_to_object(wife_npc) < 8 && keyboard_ch
 
 // if in yard and its nightime go into the house but dont have the pregame cutscene activiate
 
-// go up to the second floor and look in the safe, use sprite of player rummaing in safe
+if (room == level_one_yard and night_time == true and house_1_clean == true) {
+	
+	show_debug_message(distance_to_object(obj_door_go));
+	if (keyboard_check(ord("E"))){
+		show_debug_message("E!!!!!!!!!!!!!!!!")
+	}
+	
+	if (distance_to_object(obj_door_go) < 8 && keyboard_check(ord("E"))){
+		show_debug_message("True");
+		room_goto(Room1);
+}
+}
+
+// go up to the second floor and look in the safe, use sprite of player rummaging in safe
 
 // leave house and get back in van, van drives off screen
 

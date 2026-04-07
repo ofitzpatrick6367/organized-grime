@@ -34,3 +34,10 @@ if (room == level_one_yard and obj_player.house_1_clean == true) {
     dialog.pop();
     dialog.add(spr_informant_dialogue, "Hop in the car and get out of here. We'll come back later tonight for the goods.")
 }
+
+if (room == level_one_yard and obj_player.house_1_clean == true and obj_player.night_time == true) {
+    dialog.pop();
+    dialog.pop();
+    dialog.add(spr_informant_dialogue, "Evening, let’s get this done fast, I got stuff to do later.")
+	dialog.add(spr_informant_dialogue, "Go ahead and use the key you got on the front of the house.")
+}
