@@ -29,7 +29,7 @@ if (room == rm_floor2 and obj_glove.safe_open == true and obj_glove.got_key == t
     dialog.add(spr_informant_dialogue, "Nice, you got the key! Now get out before they start to think you've been in here too long and decide to check on you.")
 }
 
-if (room == level_one_yard) {
+if (room == level_one_yard and obj_player.house_1_clean == true) {
     dialog.pop();
     dialog.pop();
     dialog.add(spr_informant_dialogue, "Hop in the car and get out of here. We'll come back later tonight for the goods.")

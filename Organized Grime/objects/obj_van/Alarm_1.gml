@@ -5,5 +5,6 @@ if (black.image_alpha < 1 and x < -128) {
 
 if (black.image_alpha = 1) {
     x = -127;
-    black.image_alpha = 0;
+    alarm[1] = -1;
+    alarm[2] = 30;
 }

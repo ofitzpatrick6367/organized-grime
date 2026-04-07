@@ -1,3 +1,5 @@
+
+
 /* if (keyboard_check(vk_right)) {
     if (sprite_index == millers_2) {
         sprite_index = mccarthy_3;

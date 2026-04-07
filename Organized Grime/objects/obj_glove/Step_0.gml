@@ -1,3 +1,7 @@
+if (room == rm_start) {
+    room_goto(rm_title_screen);
+}
+
 this.x = mouse_x - 8;
 this.y = mouse_y - 8;
 

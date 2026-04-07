@@ -32,6 +32,26 @@ bush = obj_bush;
 fence = obj_fence;
 kitchen = obj_minigame_win;
 
+// sprites
+
+idle_down = spr_player_idle_down;
+idle_left = spr_player_idle_left;
+idle_right = spr_player_idle_right;
+idle_up = spr_player_idle_up;
+walk_down = spr_player_walk_down;
+walk_left = spr_player_walk_left;
+walk_right = spr_player_walk_right;
+walk_up = spr_player_walk_up;
+
+night_idle_down = spr_robber_idle_down;
+night_idle_left = spr_robber_idle_left;
+night_idle_right = spr_robber_idle_right;
+night_idle_up = spr_robber_idle_up;
+night_walk_down = spr_robber_walk_down;
+night_walk_left = spr_robber_walk_left;
+night_walk_right = spr_robber_walk_right;
+night_walk_up = spr_robber_walk_up;
+
 
 
 

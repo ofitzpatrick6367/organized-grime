@@ -1,14 +1,36 @@
+if (night_time == false) {
+    idle_down = spr_player_idle_down;
+    idle_left = spr_player_idle_left;
+    idle_right = spr_player_idle_right;
+    idle_up = spr_player_idle_up;
+    walk_down = spr_player_walk_down;
+    walk_left = spr_player_walk_left;
+    walk_right = spr_player_walk_right;
+    walk_up = spr_player_walk_up;
+}
+
+else if (night_time == true) {
+    idle_down = spr_robber_idle_down;
+    idle_left = spr_robber_idle_left;
+    idle_right = spr_robber_idle_right;
+    idle_up = spr_robber_idle_up;
+    walk_down = spr_robber_walk_down;
+    walk_left = spr_robber_walk_left;
+    walk_right = spr_robber_walk_right;
+    walk_up = spr_robber_walk_up;
+}
+
 house_1_kitchen_clean = obj_glove.house_1_kitchen_clean;
 house_1_fridge_clean = obj_glove.house_1_fridge_clean;
 end_cutscene = obj_glove.end_cutscene;
 
 
-if (instance_exists(obj_dialogue_parent)) {
+if (instance_exists(obj_dialogue_parent) and night_time == false) {
     can_move = false;
-    if (sprite_index == spr_player_walk_right) sprite_index = spr_player_idle_right;  
-    else if (sprite_index == spr_player_walk_left) sprite_index = spr_player_idle_left;
-    else if (sprite_index == spr_player_walk_down) sprite_index = spr_player_idle_down;
-    else if (sprite_index == spr_player_walk_up) sprite_index = spr_player_idle_up;
+    if (sprite_index == walk_right) sprite_index = idle_right;  
+    else if (sprite_index == walk_left) sprite_index = idle_left;
+    else if (sprite_index == walk_down) sprite_index = idle_down;
+    else if (sprite_index == walk_up) sprite_index = idle_up;
 }
 
 else {
@@ -24,18 +46,19 @@ move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe
 
         if (_hor != 0 or _ver != 0)
         {
-            if (_ver > 0) sprite_index = spr_player_walk_down; 
-            else if (_ver < 0) sprite_index = spr_player_walk_up;
-            else if (_hor > 0) sprite_index = spr_player_walk_right;
-            else if (_hor < 0) sprite_index = spr_player_walk_left;
+            if (_ver > 0) sprite_index = walk_down; 
+            else if (_ver < 0) sprite_index = walk_up;
+            else if (_hor > 0) sprite_index = walk_right;
+            else if (_hor < 0) sprite_index = walk_left;
             
         }
-        else
+    
+         else
         {
-            if (sprite_index == spr_player_walk_right) sprite_index = spr_player_idle_right;
-            else if (sprite_index == spr_player_walk_left) sprite_index = spr_player_idle_left;
-            else if (sprite_index == spr_player_walk_down) sprite_index = spr_player_idle_down;
-            else if (sprite_index == spr_player_walk_up) sprite_index = spr_player_idle_up;
+            if (sprite_index == walk_right) sprite_index = idle_right;
+            else if (sprite_index == walk_left) sprite_index = idle_left;
+            else if (sprite_index == walk_down) sprite_index = idle_down;
+            else if (sprite_index == walk_up) sprite_index = idle_up;
         }
     }
 
@@ -105,10 +128,14 @@ if (keyboard_check(ord("C"))) {
     house_1_clean = true;
 }
 
+if (night_time == true) {
+    house_1_clean = true;
+}
+
 
 //dialogue 
 
-if (first_dialog == false and !instance_exists(obj_dialogue_parent) and room == Room1) {
+if (first_dialog == false and !instance_exists(obj_dialogue_parent) and room == Room1 and night_time == false) {
     instance_create_depth(0, 0, 0, obj_dialog_pregame);
     first_dialog = true;
 }
@@ -207,4 +234,12 @@ if (instance_exists(wife_npc) && distance_to_object(wife_npc) < 8 && keyboard_ch
 }
 
 
-// inventory actions
+//night time
+
+// if in yard and its nightime go into the house but dont have the pregame cutscene activiate
+
+// go up to the second floor and look in the safe, use sprite of player rummaing in safe
+
+// leave house and get back in van, van drives off screen
+
+// if theres time maybe add dialogue where the informant tells you what to do but this isnt necessary
