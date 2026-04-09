@@ -1,6 +1,6 @@
 image_alpha = 1;
 
-sprite_index = cleaing_van_moving_right;
+sprite_index = spr_cleaing_van_moving_right;
 
 obj_player.night_time = true;
 
@@ -11,7 +11,7 @@ if (x < 128) {
 }
 
 if (x == 128) {
-    sprite_index = cleaing_van_right;
+    sprite_index = spr_cleaing_van_right;
     alarm[2] = 60;
     obj_player.image_alpha = 1;
     alarm[2] = -1;
