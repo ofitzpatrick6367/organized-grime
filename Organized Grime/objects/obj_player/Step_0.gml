@@ -75,7 +75,7 @@ if (instance_exists(obj_mess) && distance_to_object(obj_mess) < 8 && keyboard_ch
     room_goto(rm_cleaning); 
 }
 
-else if (instance_exists(obj_safe) && distance_to_object(obj_safe) < 8 && keyboard_check_pressed(ord("E")))
+else if (night_time == false and instance_exists(obj_safe) && distance_to_object(obj_safe) < 8 && keyboard_check_pressed(ord("E")))
 {
     if (instance_exists(obj_room_switcher)) exit;
 
@@ -126,6 +126,7 @@ if (keyboard_check(ord("M"))) {
 
 if (keyboard_check(ord("C"))) {
     house_1_clean = true;
+	obj_glove.got_key = true;
 }
 
 if (night_time == true) {
@@ -238,24 +239,36 @@ if (instance_exists(wife_npc) && distance_to_object(wife_npc) < 8 && keyboard_ch
 
 // if in yard and its nightime go into the house but dont have the pregame cutscene activiate
 
-/*if (room == level_one_yard and night_time == true and house_1_clean == true){
-	
-	show_debug_message(distance_to_object(obj_door_go));
-	if (keyboard_check_pressed(ord("E"))){
-		show_debug_message("E!!!!!!!!!!!!!!!!")
-	}
+if (room == level_one_yard and night_time == true and house_1_clean == true){
+
 	
 	if (distance_to_object(obj_door_go) < 8 && keyboard_check_released(ord("Z"))){
 		
-		
+		room_goto(Room1_night);
 }
-}*/
+}
 
 // go up to the second floor and look in the safe, use sprite of player rummaging in safe
 
-if (instance_exists(obj_safe) and distance_to_object(obj_safe) < 8 and keyboard_check_pressed(ord("E")) and night_time == true and house_1_clean == true){
-
+if (night_time == true){
 	
+	obj_glove.night_time = true;
+
+}
+
+if (room == rm_floor2_night and instance_exists(obj_safe) and distance_to_object(obj_safe) < 8 and keyboard_check_pressed(ord("E")) and night_time == true and house_1_clean == true){
+
+	instance_destroy(obj_dialogue_parent);
+	
+	sprite_index = spr_robber_rummaging_up;
+	
+	if (sprite_index == spr_robber_rummaging_up){
+		switch_anim++;
+	}
+	
+	if (switch_anim >= 18){
+		this.sprite_index = spr_player_idle_up;
+	}
 
 }
 

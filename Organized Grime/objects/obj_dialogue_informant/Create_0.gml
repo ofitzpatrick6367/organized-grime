@@ -41,3 +41,8 @@ if (room == level_one_yard and obj_player.house_1_clean == true and obj_player.n
     dialog.add(spr_informant_dialogue, "Evening, let’s get this done fast, I got stuff to do later.")
 	dialog.add(spr_informant_dialogue, "Go ahead and use the key you got on the front of the house.")
 }
+
+if (room == rm_floor2_night){
+	dialog.pop();
+	dialog.pop();
+}

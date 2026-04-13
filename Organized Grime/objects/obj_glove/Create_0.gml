@@ -9,5 +9,6 @@ got_crowbar = false;
 got_light = false;
 got_note = false;
 end_cutscene = false;
+night_time = false;
 
 interact = [obj_fridge, obj_mess, obj_dog_bed, husband_npc, wife_npc]

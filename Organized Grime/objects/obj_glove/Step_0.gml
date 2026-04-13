@@ -44,3 +44,7 @@ if (keyboard_check(ord("L"))) {
 if (house_1_fridge_clean == true or keyboard_check(ord("N"))) {
     got_note = true;
 }
+
+if (night_time == true){
+	obj_player.night_time = true;
+}
