@@ -6,6 +6,7 @@ house_1_fridge_clean = 0;
 times_up_stairs = 0;
 night_time = false;
 interact = [obj_fridge, obj_mess, obj_dog_bed, husband_npc, wife_npc];
+switch_anim = 0;
 
 first_dialog = false;
 fridge_dialog = false;

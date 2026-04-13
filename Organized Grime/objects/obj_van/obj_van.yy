@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"cleaing_van",
-    "path":"sprites/cleaing_van/cleaing_van.yy",
+    "name":"spr_cleaing_van",
+    "path":"sprites/spr_cleaing_van/spr_cleaing_van.yy",
   },
   "spriteMaskId":null,
   "visible":true,

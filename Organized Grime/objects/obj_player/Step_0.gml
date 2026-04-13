@@ -63,7 +63,7 @@ move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe
     }
 
 
-if (instance_exists(obj_mess) && distance_to_object(obj_mess) < 8 && keyboard_check(ord("E")) and house_1_kitchen_clean == false)
+if (instance_exists(obj_mess) && distance_to_object(obj_mess) < 8 && keyboard_check_pressed(ord("E")) and house_1_kitchen_clean == false)
 {
     if (instance_exists(obj_room_switcher)) exit;
 
@@ -75,7 +75,7 @@ if (instance_exists(obj_mess) && distance_to_object(obj_mess) < 8 && keyboard_ch
     room_goto(rm_cleaning); 
 }
 
-else if (instance_exists(obj_safe) && distance_to_object(obj_safe) < 8 && keyboard_check(ord("E")))
+else if (night_time == false and instance_exists(obj_safe) && distance_to_object(obj_safe) < 8 && keyboard_check_pressed(ord("E")))
 {
     if (instance_exists(obj_room_switcher)) exit;
 
@@ -87,7 +87,7 @@ else if (instance_exists(obj_safe) && distance_to_object(obj_safe) < 8 && keyboa
     room_goto(rm_safe);
 }
 
-else if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && keyboard_check(ord("E")) and house_1_fridge_clean == false)
+else if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && keyboard_check_pressed(ord("E")) and house_1_fridge_clean == false)
 {
     if (instance_exists(obj_room_switcher)) exit;
 
@@ -100,7 +100,7 @@ else if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && ke
 }
 
 
-else if (instance_exists(obj_desk_with_check) && distance_to_object(obj_desk_with_check) < 8 && keyboard_check(ord("E")))
+else if (instance_exists(obj_desk_with_check) && distance_to_object(obj_desk_with_check) < 8 && keyboard_check_pressed(ord("E")))
 {
     obj_desk_with_check.sprite_index = spr_office_desk_without_check;
 }
@@ -126,6 +126,7 @@ if (keyboard_check(ord("M"))) {
 
 if (keyboard_check(ord("C"))) {
     house_1_clean = true;
+	obj_glove.got_key = true;
 }
 
 if (night_time == true) {
@@ -149,13 +150,13 @@ if (safe_dialog == false and !instance_exists(obj_dialogue_parent) and room == r
     safe_dialog = true;
 }
 
-if (instance_exists(obj_mess) && distance_to_object(obj_mess) < 8 && keyboard_check(ord("E")) and house_1_kitchen_clean == true) {
+if (instance_exists(obj_mess) && distance_to_object(obj_mess) < 8 && keyboard_check_pressed(ord("E")) and house_1_kitchen_clean == true) {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_dialog_already_clean);
     sprite_index = spr_player_idle_down;
     player.y += 8;
 }
 
-if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && keyboard_check(ord("E")) and house_1_fridge_clean == true) {
+if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && keyboard_check_pressed(ord("E")) and house_1_fridge_clean == true) {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_dialog_already_clean);
     sprite_index = spr_player_idle_down;
     player.y += 8;
@@ -166,7 +167,7 @@ if (open_safe_dialog = false and obj_glove.safe_open == true and !instance_exist
     open_safe_dialog = true;
 }
 
-if (instance_exists(obj_dog_bed) and distance_to_object(obj_dog_bed) < 8 and keyboard_check(ord("E")) and dogbed_dialog == false) {
+if (instance_exists(obj_dog_bed) and distance_to_object(obj_dog_bed) < 8 and keyboard_check_pressed(ord("E")) and dogbed_dialog == false) {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_dialogue_dogbed);
     dogbed_dialog = true;
 }
@@ -225,11 +226,11 @@ if (room == Room1 and house_1_clean == false and player.y < 207 and !instance_ex
     }
 }
 
-if (instance_exists(husband_npc) && distance_to_object(husband_npc) < 8 && keyboard_check(ord("E"))) {
+if (instance_exists(husband_npc) && distance_to_object(husband_npc) < 8 && keyboard_check_pressed(ord("E"))) {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_sus_dialogue);
 }
 
-if (instance_exists(wife_npc) && distance_to_object(wife_npc) < 8 && keyboard_check(ord("E"))) {
+if (instance_exists(wife_npc) && distance_to_object(wife_npc) < 8 && keyboard_check_pressed(ord("E"))) {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_sus_dialogue_2);
 }
 
@@ -238,7 +239,39 @@ if (instance_exists(wife_npc) && distance_to_object(wife_npc) < 8 && keyboard_ch
 
 // if in yard and its nightime go into the house but dont have the pregame cutscene activiate
 
-// go up to the second floor and look in the safe, use sprite of player rummaing in safe
+if (room == level_one_yard and night_time == true and house_1_clean == true){
+
+	
+	if (distance_to_object(obj_door_go) < 8 && keyboard_check_released(ord("Z"))){
+		
+		room_goto(Room1_night);
+}
+}
+
+// go up to the second floor and look in the safe, use sprite of player rummaging in safe
+
+if (night_time == true){
+	
+	obj_glove.night_time = true;
+
+}
+
+if (room == rm_floor2_night and instance_exists(obj_safe) and distance_to_object(obj_safe) < 8 and keyboard_check_pressed(ord("E")) and night_time == true and house_1_clean == true){
+
+	instance_destroy(obj_dialogue_parent);
+	
+	sprite_index = spr_robber_rummaging_up;
+	
+	if (sprite_index == spr_robber_rummaging_up){
+		switch_anim++;
+	}
+	
+	if (switch_anim >= 18){
+		this.sprite_index = spr_player_idle_up;
+	}
+
+}
+
 
 // leave house and get back in van, van drives off screen
 
