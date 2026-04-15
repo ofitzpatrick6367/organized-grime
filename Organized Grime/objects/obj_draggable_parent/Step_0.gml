@@ -5,8 +5,8 @@ if (mouse_check_button(mb_left) == false)
 
 if (this.can_move == true)
 {
-    this.x = mouse_x;
-    this.y = mouse_y;
+    this.x = mouse_x-8;
+    this.y = mouse_y-8;
 }
 
 if (this.can_move == false) 

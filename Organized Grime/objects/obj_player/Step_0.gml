@@ -41,7 +41,7 @@ if (can_move == true) {
     var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
     var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
-move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe, fridge, stair, dogbed, level_one_npc, level_one_npc_2, desk, swivel_chair, bush, fence], undefined, undefined, undefined, move_speed, move_speed);
+move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, mess, npc, safe, fridge, stair, dogbed, level_one_npc, level_one_npc_2, desk, swivel_chair, bush, fence, safe_steal], undefined, undefined, undefined, move_speed, move_speed);
 
 
         if (_hor != 0 or _ver != 0)
@@ -239,14 +239,7 @@ if (instance_exists(wife_npc) && distance_to_object(wife_npc) < 8 && keyboard_ch
 
 // if in yard and its nightime go into the house but dont have the pregame cutscene activiate
 
-if (room == level_one_yard and night_time == true and house_1_clean == true){
 
-	
-	if (distance_to_object(obj_door_go) < 8 && keyboard_check_released(ord("Z"))){
-		
-		room_goto(Room1_night);
-}
-}
 
 // go up to the second floor and look in the safe, use sprite of player rummaging in safe
 
@@ -256,9 +249,25 @@ if (night_time == true){
 
 }
 
-if (room == rm_floor2_night and instance_exists(obj_safe) and distance_to_object(obj_safe) < 8 and keyboard_check_pressed(ord("E")) and night_time == true and house_1_clean == true){
+if (room == rm_floor2_night and instance_exists(obj_safe_robbery) and distance_to_object(obj_safe_robbery) < 8 and keyboard_check_pressed(ord("E")) and night_time == true and house_1_clean == true){
 
 	instance_destroy(obj_dialogue_parent);
+	
+	/*can_move = false;
+	
+	player.x = 392;
+	player.y = 96
+	
+	sprite_index = spr_robber_walk_up;
+	in_anim = true;
+	
+	if (in_anim == true){
+		player.y -= 0.5;
+	}
+	
+	if (player.y == 81){
+		in_anim == false;
+	}
 	
 	sprite_index = spr_robber_rummaging_up;
 	
@@ -268,7 +277,8 @@ if (room == rm_floor2_night and instance_exists(obj_safe) and distance_to_object
 	
 	if (switch_anim >= 18){
 		this.sprite_index = spr_player_idle_up;
-	}
+		can_move = true;
+	}*/
 
 }
 

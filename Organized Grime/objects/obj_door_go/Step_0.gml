@@ -7,6 +7,7 @@ if (obj_player.house_1_clean == true and obj_glove.got_key == true and distance_
 
 }
 
-if (room == level_one_yard and night_time == true and distance_to_object(obj_player) < 8 and keyboard_check_released(ord("E"))){
+if (room == level_one_yard and obj_player.night_time == true and distance_to_object(obj_player) < 8 and keyboard_check_released(ord("E"))){
+	room_goto(Room1_night);
 
 }
