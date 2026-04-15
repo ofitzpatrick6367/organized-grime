@@ -1,7 +1,17 @@
 this.x = player.x + 8;
 this.y = player.y - 17;
 
-if(instance_exists(interactible_obj) && distance_to_object(interactible_obj) < 0.0001){
+/*if(distance_to_object(interactible_obj) < 0.5){
+	show_debug_message("CLOSE");
+	show_debug_message(distance_to_object(interactible_obj));
+}
+
+else{
+	show_debug_message("FAR!!");
+}
+*/
+
+if(distance_to_object(interactible_obj) < 0.5){
 
 	
 	/*show_debug_message(distance_to_object(interactible_obj));*/
@@ -24,4 +34,3 @@ else{
 	this.image_alpha = 0;
 	switch_anim = 0;
 }
-

@@ -40,13 +40,13 @@ if (room == rm_floor2 and obj_glove.safe_open == true and obj_glove.got_key == t
     dialog.add(spr_informant_dialogue, "Nice, you got the key! Now get out before they start to think you've been in here too long and decide to check on you.")
 }
 
-if (room == level_one_yard and obj_player.house_1_clean == true) {
+if (room == level_one_yard and obj_player.house_1_clean == true and obj_glove.got_key = true) {
     dialog.pop();
     dialog.pop();
     dialog.add(spr_informant_dialogue, "Hop in the car and get out of here. We'll come back later tonight for the goods.")
 }
 
-if (room == level_one_yard and obj_player.house_1_clean == true and obj_player.night_time == true) {
+if (room == level_one_yard and obj_player.house_1_clean == true and obj_glove.got_key = true and obj_player.night_time == true) {
     dialog.pop();
     dialog.pop();
     dialog.add(spr_informant_dialogue, "Evening, let’s get this done fast, I got stuff to do later.")
@@ -56,4 +56,6 @@ if (room == level_one_yard and obj_player.house_1_clean == true and obj_player.n
 if (room == rm_floor2_night){
 	dialog.pop();
 	dialog.pop();
+	dialog.add(spr_informant_dialogue, " Great, now my sources tell me that these two are some deep sleepers, so you don’t gotta worry too much about waking them up.")
+	dialog.add(spr_informant_dialogue, "I still wouldn’t get too comfortable though, so just go ahead and get to the safe.")
 }

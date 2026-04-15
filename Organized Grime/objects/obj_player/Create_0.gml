@@ -6,6 +6,7 @@ house_1_fridge_clean = 0;
 times_up_stairs = 0;
 night_time = false;
 interact = [obj_fridge, obj_mess, obj_dog_bed, husband_npc, wife_npc];
+in_anim = false;
 switch_anim = 0;
 
 first_dialog = false;
@@ -32,6 +33,7 @@ swivel_chair = obj_swivel_chair;
 bush = obj_bush;
 fence = obj_fence;
 kitchen = obj_minigame_win;
+safe_steal = obj_safe_robbery;
 
 // sprites
 

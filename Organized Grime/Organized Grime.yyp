@@ -164,6 +164,7 @@
     {"id":{"name":"obj_room_switcher","path":"objects/obj_room_switcher/obj_room_switcher.yy",},},
     {"id":{"name":"obj_safe_button_parent","path":"objects/obj_safe_button_parent/obj_safe_button_parent.yy",},},
     {"id":{"name":"obj_safe_key","path":"objects/obj_safe_key/obj_safe_key.yy",},},
+    {"id":{"name":"obj_safe_robbery","path":"objects/obj_safe_robbery/obj_safe_robbery.yy",},},
     {"id":{"name":"obj_safe","path":"objects/obj_safe/obj_safe.yy",},},
     {"id":{"name":"obj_shadow","path":"objects/obj_shadow/obj_shadow.yy",},},
     {"id":{"name":"obj_stair_side","path":"objects/obj_stair_side/obj_stair_side.yy",},},

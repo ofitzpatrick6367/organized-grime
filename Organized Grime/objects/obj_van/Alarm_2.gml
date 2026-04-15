@@ -14,6 +14,7 @@ if (x == 128) {
     sprite_index = spr_cleaing_van_right;
     alarm[2] = 60;
     obj_player.image_alpha = 1;
+	obj_shadow.image_alpha = 1;
     alarm[2] = -1;
 }
 
