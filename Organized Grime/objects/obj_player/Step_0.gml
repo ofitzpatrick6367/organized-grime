@@ -250,38 +250,75 @@ if (night_time == true){
 }
 
 if (room == rm_floor2_night and instance_exists(obj_safe_robbery) and distance_to_object(obj_safe_robbery) < 8 and keyboard_check_pressed(ord("E")) and night_time == true and house_1_clean == true){
-
-	instance_destroy(obj_dialogue_parent);
+    instance_destroy(obj_dialogue_parent);
 	
-	/*can_move = false;
+    can_move = false;
 	
-	player.x = 392;
-	player.y = 96
+    player.x = 392;
+   	player.y = 96; 
+    
+   	sprite_index = spr_robber_walk_up;
+   	in_anim = true;
 	
-	sprite_index = spr_robber_walk_up;
-	in_anim = true;
+   	if (in_anim == true){
+   		player.y -= 0.5;
+   	}
 	
-	if (in_anim == true){
-		player.y -= 0.5;
-	}
+   	if (player.y == 81){
+   		in_anim = false;
+   	} 
+    
+   	sprite_index = spr_robber_rummaging_up;
 	
-	if (player.y == 81){
-		in_anim == false;
-	}
+   	if (sprite_index == spr_robber_rummaging_up){
+   		switch_anim++;
+   	}
 	
-	sprite_index = spr_robber_rummaging_up;
-	
-	if (sprite_index == spr_robber_rummaging_up){
-		switch_anim++;
-	}
-	
-	if (switch_anim >= 18){
-		this.sprite_index = spr_player_idle_up;
-		can_move = true;
-	}*/
-
+   	if (switch_anim >= 18){
+   		this.sprite_index = spr_player_idle_up;
+   		can_move = true;
+   	}
+       
+       if (sprite_index == spr_robber_rummaging_up) {
+           alarm[0] = 120;
+    } 
+    
 }
 
+if (rummaging == false) {
+    instance_destroy(obj_quick_marker);
+    instance_destroy(obj_quick_ring);
+}
+
+if (instance_exists(obj_quick_marker)) {
+    if (obj_quick_marker.failure == true) {
+        robbery_fail = true;
+    }
+}
+
+if (robbery_fail == true) {
+    instance_destroy(obj_quick_marker);
+    instance_destroy(obj_quick_ring);
+    
+    sprite_index = spr_robber_idle_up;
+    obj_e_button.image_alpha = 0;
+    
+    alarm[2] = 30;
+}
+
+if (robbery_success == true) {
+    show_debug_message("heck yeah my guy");
+}
+
+else if (robbery_fail == true) {
+    show_debug_message("heck no my guy");
+}
+
+if (room == level_one_yard) {
+    if (robbery_success == true) {
+        instance_create_depth(0, 0, 0, obj_dialogue_informant);
+    }
+}
 
 // leave house and get back in van, van drives off screen
 

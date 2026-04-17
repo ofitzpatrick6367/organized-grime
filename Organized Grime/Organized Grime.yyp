@@ -117,6 +117,7 @@
     {"id":{"name":"obj_dialogue_dogbed","path":"objects/obj_dialogue_dogbed/obj_dialogue_dogbed.yy",},},
     {"id":{"name":"obj_dialogue_informant","path":"objects/obj_dialogue_informant/obj_dialogue_informant.yy",},},
     {"id":{"name":"obj_dialogue_parent","path":"objects/obj_dialogue_parent/obj_dialogue_parent.yy",},},
+    {"id":{"name":"obj_dialogue_rob_fail","path":"objects/obj_dialogue_rob_fail/obj_dialogue_rob_fail.yy",},},
     {"id":{"name":"obj_dog_bed","path":"objects/obj_dog_bed/obj_dog_bed.yy",},},
     {"id":{"name":"obj_door_go","path":"objects/obj_door_go/obj_door_go.yy",},},
     {"id":{"name":"obj_draggable_parent","path":"objects/obj_draggable_parent/obj_draggable_parent.yy",},},
@@ -440,8 +441,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_grandma_house","path":"rooms/rm_grandma_house/rm_grandma_house.yy",},},
+    {"roomId":{"name":"Room1_night","path":"rooms/Room1_night/Room1_night.yy",},},
     {"roomId":{"name":"level_one_yard","path":"rooms/level_one_yard/level_one_yard.yy",},},
+    {"roomId":{"name":"rm_floor2_night","path":"rooms/rm_floor2_night/rm_floor2_night.yy",},},
+    {"roomId":{"name":"rm_grandma_house","path":"rooms/rm_grandma_house/rm_grandma_house.yy",},},
     {"roomId":{"name":"rm_pawn_shop","path":"rooms/rm_pawn_shop/rm_pawn_shop.yy",},},
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
@@ -455,8 +458,6 @@
     {"roomId":{"name":"rm_fridge_open","path":"rooms/rm_fridge_open/rm_fridge_open.yy",},},
     {"roomId":{"name":"rm_fridge_closed","path":"rooms/rm_fridge_closed/rm_fridge_closed.yy",},},
     {"roomId":{"name":"rm_lv_select","path":"rooms/rm_lv_select/rm_lv_select.yy",},},
-    {"roomId":{"name":"Room1_night","path":"rooms/Room1_night/Room1_night.yy",},},
-    {"roomId":{"name":"rm_floor2_night","path":"rooms/rm_floor2_night/rm_floor2_night.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -59,3 +59,9 @@ if (room == rm_floor2_night){
 	dialog.add(spr_informant_dialogue, " Great, now my sources tell me that these two are some deep sleepers, so you don’t gotta worry too much about waking them up.")
 	dialog.add(spr_informant_dialogue, "I still wouldn’t get too comfortable though, so just go ahead and get to the safe.")
 }
+
+if (obj_player.robbery_success == true) {
+    dialog.pop();
+    dialog.pop();
+    dialog.add(spr_informant_dialogue, "Let's go see how much we can get for this stuff at the pawn shop.")
+}

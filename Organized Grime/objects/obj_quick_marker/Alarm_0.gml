@@ -1,5 +1,5 @@
 image_angle -= angle;
-angle += 0.03;
+angle += 0.1;
 
 
 

@@ -48,3 +48,5 @@ if (house_1_fridge_clean == true or keyboard_check(ord("N"))) {
 if (night_time == true){
 	obj_player.night_time = true;
 }
+
+

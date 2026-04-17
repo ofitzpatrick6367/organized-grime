@@ -8,6 +8,9 @@ night_time = false;
 interact = [obj_fridge, obj_mess, obj_dog_bed, husband_npc, wife_npc];
 in_anim = false;
 switch_anim = 0;
+rummaging = true;
+robbery_fail = false;
+robbery_success = false;
 
 first_dialog = false;
 fridge_dialog = false;

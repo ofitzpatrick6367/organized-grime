@@ -6,5 +6,12 @@ if (black.image_alpha < 1 and x < -128) {
 if (black.image_alpha = 1) {
     x = -127;
     alarm[1] = -1;
-    alarm[2] = 30;
+    
+    if (obj_player.robbery_success == false) {
+        alarm[2] = 30;
+    }
+    
+    else if (obj_player.robbery_fail == true) {
+        room_goto(rm_pawn_shop);
+    }
 }

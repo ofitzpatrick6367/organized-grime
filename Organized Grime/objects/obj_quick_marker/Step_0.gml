@@ -15,6 +15,7 @@ if (image_angle < -350) {
 if (image_angle >= -270 and image_angle <= -180) {
     if (pressed == 1 or released == 1) {
         success = true;
+        obj_player.robbery_success = true;
         instance_destroy();
         instance_destroy(obj_quick_ring);
     }
@@ -22,6 +23,7 @@ if (image_angle >= -270 and image_angle <= -180) {
 
 else {
     if (pressed ==1 or released == 1) {
-        show_debug_message("FAILURE!!! you die now i guess")
+        show_debug_message("FAILURE!!! you die now");
+        obj_player.robbery_fail = true;
     }
 }
