@@ -73,6 +73,8 @@ if (instance_exists(obj_mess) && distance_to_object(obj_mess) < 8 && keyboard_ch
     _switcher.original_room = room;
 
     room_goto(rm_cleaning); 
+	audio_stop_sound(snd__house_1_theme);
+	audio_play_sound(snd_minigame, 0, true, 0.5);
 }
 
 else if (night_time == false and instance_exists(obj_safe) && distance_to_object(obj_safe) < 8 && keyboard_check_pressed(ord("E")))
@@ -97,6 +99,8 @@ else if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && ke
     _switcher.original_room = room;
 
     room_goto(rm_fridge_open);
+	audio_stop_sound(snd__house_1_theme);
+	audio_play_sound(snd_minigame, 0, true, 0.5);
 }
 
 
