@@ -7,7 +7,8 @@ fridge_dialogue = false;
 
 if (room == level_one_yard and obj_player.house_1_clean == false and obj_glove.got_key == false) {
     dialog.add(spr_informant_dialogue, "Mornin' pal, glad you could come into ''work'' today. Listen, I got a new joint for you to scope out, should be pretty easy for someone of your expertise. Here's the rundown.")
-    dialog.add(spr_informant_dialogue, "Simple enough, right? Now go ahead and get to work. Lemme know if you find anything. And I'll be keeping an eye out too, got it?")
+	dialog.add(spr_informant_dialogue, "Simple enough, right? Now go ahead and get to work. Lemme know if you find anything. And I'll be keeping an eye out too, got it?")
+
 }
     
 
