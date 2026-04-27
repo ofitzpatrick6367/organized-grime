@@ -1,8 +1,6 @@
-num = instance_number(obj_dust);
+count = 1;
 
-if (num > 200) {
-    instance_copy(true);
-}
+image_xscale = 0.75;
+image_yscale = 0.75;
 
-x = random(320);
-y = random(180);
+image_alpha = 0.6;

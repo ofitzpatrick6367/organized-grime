@@ -493,6 +493,7 @@
     {"roomId":{"name":"rm_fridge_closed","path":"rooms/rm_fridge_closed/rm_fridge_closed.yy",},},
     {"roomId":{"name":"rm_lv_select","path":"rooms/rm_lv_select/rm_lv_select.yy",},},
     {"roomId":{"name":"rm_china_shelf","path":"rooms/rm_china_shelf/rm_china_shelf.yy",},},
+    {"roomId":{"name":"level_one_yard","path":"rooms/level_one_yard/level_one_yard.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

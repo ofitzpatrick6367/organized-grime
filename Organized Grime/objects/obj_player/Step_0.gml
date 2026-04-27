@@ -89,6 +89,17 @@ else if (night_time == false and instance_exists(obj_safe) && distance_to_object
     room_goto(rm_safe);
 }
 
+else if (night_time == false and instance_exists(obj_china_shelf) and distance_to_object(obj_china_shelf) < 8 and keyboard_check_pressed(ord("E)"))) {
+    if (instance_exists(obj_room_switcher)) exit;
+
+    var _switcher = instance_create_depth(0, 0, 0, obj_room_switcher);
+
+    _switcher.player_data = self;
+    _switcher.original_room = room;
+
+    room_goto(rm_china_shelf);
+}
+
 else if (instance_exists(obj_fridge) && distance_to_object(obj_fridge) < 8 && keyboard_check_pressed(ord("E")) and house_1_fridge_clean == false)
 {
     if (instance_exists(obj_room_switcher)) exit;
