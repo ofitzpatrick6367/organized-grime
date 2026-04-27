@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_e_loop",
-    "path":"sprites/spr_e_loop/spr_e_loop.yy",
+    "name":"spr_cash_reaction",
+    "path":"sprites/spr_cash_reaction/spr_cash_reaction.yy",
   },
   "spriteMaskId":null,
   "visible":true,

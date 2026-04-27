@@ -149,6 +149,7 @@
     {"id":{"name":"obj_go_floor1","path":"objects/obj_go_floor1/obj_go_floor1.yy",},},
     {"id":{"name":"obj_go_floor2","path":"objects/obj_go_floor2/obj_go_floor2.yy",},},
     {"id":{"name":"obj_grandma","path":"objects/obj_grandma/obj_grandma.yy",},},
+    {"id":{"name":"obj_house_card_1","path":"objects/obj_house_card_1/obj_house_card_1.yy",},},
     {"id":{"name":"obj_interactible","path":"objects/obj_interactible/obj_interactible.yy",},},
     {"id":{"name":"obj_inv_crowbar","path":"objects/obj_inv_crowbar/obj_inv_crowbar.yy",},},
     {"id":{"name":"obj_inv_key","path":"objects/obj_inv_key/obj_inv_key.yy",},},
@@ -221,6 +222,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Dialogue","path":"scripts/Dialogue/Dialogue.yy",},},
     {"id":{"name":"snd__house_1_theme","path":"sounds/snd__house_1_theme/snd__house_1_theme.yy",},},
+    {"id":{"name":"snd_got_check","path":"sounds/snd_got_check/snd_got_check.yy",},},
     {"id":{"name":"snd_minigame_loss","path":"sounds/snd_minigame_loss/snd_minigame_loss.yy",},},
     {"id":{"name":"snd_minigame_win","path":"sounds/snd_minigame_win/snd_minigame_win.yy",},},
     {"id":{"name":"snd_minigame","path":"sounds/snd_minigame/snd_minigame.yy",},},
@@ -473,6 +475,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"level_one_yard","path":"rooms/level_one_yard/level_one_yard.yy",},},
     {"roomId":{"name":"rm_grandma_house","path":"rooms/rm_grandma_house/rm_grandma_house.yy",},},
     {"roomId":{"name":"Room1_night","path":"rooms/Room1_night/Room1_night.yy",},},
     {"roomId":{"name":"rm_floor2_night","path":"rooms/rm_floor2_night/rm_floor2_night.yy",},},

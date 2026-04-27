@@ -141,7 +141,6 @@ if (keyboard_check(ord("M"))) {
 
 if (keyboard_check(ord("C"))) {
     house_1_clean = true;
-	obj_glove.got_key = true;
 }
 
 if (night_time == true) {
