@@ -7,11 +7,11 @@ if (black.image_alpha = 1) {
     x = -127;
     alarm[1] = -1;
     
-    if (obj_player.robbery_success == false) {
+    if (obj_glove.house_1_robbery_success == false) {
         alarm[2] = 30;
     }
     
-    else if (obj_player.robbery_fail == true) {
-        room_goto(rm_pawn_shop);
+    else if (obj_glove.house_1_robbery_success == true) {
+        alarm[3] = 60;
     }
 }

@@ -1,7 +1,7 @@
 this.x = player.x + 8;
 this.y = player.y - 17;
 
-if (obj_desk_with_check.sprite_index == spr_office_desk_without_check){
+if (instance_exists(obj_desk_with_check) && obj_desk_with_check.sprite_index == spr_office_desk_without_check){
 	image_alpha = 1;
 	
 	if (flag == false){

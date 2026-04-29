@@ -1,3 +1,5 @@
+if (obj_player.robbery_success == true) house_1_robbery_success = true;
+
 if (room == rm_start) {
     room_goto(rm_title_screen);
 }

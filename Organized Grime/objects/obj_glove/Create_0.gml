@@ -10,5 +10,6 @@ got_light = false;
 got_note = false;
 end_cutscene = false;
 night_time = false;
+house_1_robbery_success = true;
 
 interact = [obj_fridge, obj_mess, obj_dog_bed, husband_npc, wife_npc]

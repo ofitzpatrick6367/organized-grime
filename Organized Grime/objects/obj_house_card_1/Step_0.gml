@@ -29,8 +29,11 @@ if (switch_anim < 6 && this.sprite_index == spr_house_card_front){
 			
 	if (switch_anim >= 6){
 		spun = true;
+        alarm[0] = 180;
 	}
 }
+
+if (spun == false) obj_player.can_move = false;
 
 if (spun == true && mouse_check_button(mb_left)){
 	image_alpha = 0;

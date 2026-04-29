@@ -227,7 +227,7 @@ if (room == Room1 and house_1_clean == false and player.y < 207 and !instance_ex
         }
         else if (obj_sus_meter.sprite_index == spr_sus_meter_75) {
             obj_sus_meter.sprite_index = spr_sus_meter_99;
-        }
+        }    
         else if (obj_sus_meter.sprite_index == spr_sus_meter_50) {
             obj_sus_meter.sprite_index = spr_sus_meter_75;
         }
@@ -332,6 +332,10 @@ if (room == level_one_yard) {
     if (robbery_success == true) {
         instance_create_depth(0, 0, 0, obj_dialogue_informant);
     }
+}
+
+if (room == rm_pawn_shop) {
+    can_move = false;
 }
 
 // leave house and get back in van, van drives off screen

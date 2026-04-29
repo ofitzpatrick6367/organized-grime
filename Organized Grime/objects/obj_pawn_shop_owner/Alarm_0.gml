@@ -1,1 +1,1 @@
-instance_create_depth(0, 0, 0, obj_dialog_pawn_shop);
+instance_create_depth(0,0,0, obj_dialog_pawn_shop);
