@@ -41,8 +41,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Pawn Shop Owner",
-    "path":"folders/Sprites/Pawn Shop Owner.yy",
+    "name":"Pawn Shop",
+    "path":"folders/Sprites/Pawn Shop.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

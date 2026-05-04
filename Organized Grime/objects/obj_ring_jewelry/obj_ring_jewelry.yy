@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_dialog_button_leave",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_ring_jewelry",
+  "eventList":[],
   "managed":true,
-  "name":"obj_dialog_button_leave",
+  "name":"obj_ring_jewelry",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialogue",
-    "path":"folders/Objects/Dialogue.yy",
+    "name":"Pawn Shop",
+    "path":"folders/Objects/Pawn Shop.yy",
   },
-  "parentObjectId":{
-    "name":"obj_dialogue_button2_parent",
-    "path":"objects/obj_dialogue_button2_parent/obj_dialogue_button2_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_ring_jewelry",
+    "path":"sprites/spr_ring_jewelry/spr_ring_jewelry.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

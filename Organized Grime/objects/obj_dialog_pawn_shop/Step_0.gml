@@ -7,7 +7,6 @@ if (showing_dialog == false) {
     current_dialog = dialog.pop();
     showing_dialog = true;
 }
-
 else {
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_dialog_button_sell);
     instance_create_depth(0, 0, layer_get_depth("Instances"), obj_dialog_button_leave);

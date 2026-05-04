@@ -10,11 +10,15 @@
     {"name":"inst_4603E454","path":"rooms/rm_pawn_shop/rm_pawn_shop.yy",},
     {"name":"inst_7BC0EE28","path":"rooms/rm_pawn_shop/rm_pawn_shop.yy",},
     {"name":"inst_3568D539","path":"rooms/rm_pawn_shop/rm_pawn_shop.yy",},
+    {"name":"inst_50098DC5","path":"rooms/rm_pawn_shop/rm_pawn_shop.yy",},
+    {"name":"inst_2B804E4C","path":"rooms/rm_pawn_shop/rm_pawn_shop.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances_2","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_3568D539","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3568D539","objectId":{"name":"obj_glove","path":"objects/obj_glove/obj_glove.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":64.0,},
+        {"$GMRInstance":"v2","%Name":"inst_50098DC5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50098DC5","objectId":{"name":"obj_ring_jewelry","path":"objects/obj_ring_jewelry/obj_ring_jewelry.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.6,"scaleY":0.6,"x":96.0,"y":128.0,},
+        {"$GMRInstance":"v2","%Name":"inst_2B804E4C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2B804E4C","objectId":{"name":"obj_watch","path":"objects/obj_watch/obj_watch.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":128.0,},
       ],"layers":[],"name":"Instances_2","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_363E6274","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_363E6274","objectId":{"name":"obj_pawn_shop_lights","path":"objects/obj_pawn_shop_lights/obj_pawn_shop_lights.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
