@@ -1,0 +1,1 @@
+this = obj_ring_jewelry;
