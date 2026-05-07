@@ -1,7 +1,7 @@
 if(level_end == true){
 	sprite_index = spr_blue_count_up;
 	final_num = 300;
-	image_speed = final_score / 500;
+	image_speed = final_score / 50;
 	
 	if(countdown < final_num){
 		countdown++;
@@ -9,7 +9,7 @@ if(level_end == true){
 	}
 	
 	if (countdown >= final_num){
-		sprite_index = number[(final_score div 10)];
+		sprite_index = number[(final_score mod 10)];
 	}
 }
 

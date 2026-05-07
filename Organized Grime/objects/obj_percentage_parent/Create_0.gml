@@ -1,4 +1,8 @@
-final_score = 38;
+final_score = 99;
+parent = obj_percentage_parent;
+
+level_end = false;
+countdown = 0;
 
 number[0] = spr_blue_0;
 number[1] = spr_blue_1;
