@@ -1,3 +1,5 @@
+if (room == rm_floor2_night) room_goto(rm_pawn_shop);
+
 if (night_time == false) {
     idle_down = spr_player_idle_down;
     idle_left = spr_player_idle_left;
