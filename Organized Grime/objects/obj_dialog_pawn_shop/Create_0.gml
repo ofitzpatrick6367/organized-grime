@@ -2,20 +2,51 @@ event_inherited();
 
 sell_ring = false;
 
-if (obj_pawn_shop_owner.intro_done == false) {
-    dialog.add(spr_pawn_shop_dialogue, "...You didn't see that, did you? I mean, uh, what can I help you with?");
+owner = obj_pawn_shop_owner;
+
+if (owner.watch_sold == true && owner.watch_negotiate == false) {
+    dialog.pop();
+    dialog.add(spr_pawn_shop_dialogue, "I'm sure I have space for this in here... somewhere... (+ $75)");
 }
 
-if (obj_pawn_shop_owner.intro_done == true && obj_pawn_shop_owner.sell == true) {
+else if (owner.ring_sold == true && owner.ring_negotiate == false) {
+    dialog.pop();
+    dialog.add(spr_pawn_shop_dialogue, "I'm sure I have space for this in here... somewhere... (+ $150)");
+}
+
+if (owner.ring_sold == true && owner.watch_raise == true) {
+    dialog.pop();
+    dialog.add(spr_pawn_shop_dialogue, "I'm sure I have space for this in here... somewhere... (+ $175)");
+}
+
+else if (owner.sell_watch == true) { 
+    dialog.pop();
+    dialog.add(spr_pawn_shop_dialogue, "A watch, huh... I'll give you $75 for it."); 
+}
+
+else if (owner.ring_raise == true) {
+    dialog.pop();
+    dialog.add(spr_pawn_shop_dialogue, "High quality, eh? Let me take a look... Looks pretty good to me. $175 it is.");
+}
+
+else if (owner.ring_negotiate == true) {
+    dialog.pop();
+    dialog.add(spr_pawn_shop_dialogue, "What, $150 isn't good enough for you? What do you think it's worth?");
+}
+
+else if (owner.sell_ring == true) { 
+    dialog.pop();
+    dialog.add(spr_pawn_shop_dialogue, "A ring, huh... looks pretty decent. I'll give you $150 for it.");
+}
+
+else if (owner.sell == true) {
     dialog.pop();
     dialog.add(spr_pawn_shop_dialogue, "Alright, what do you want to sell?");
 }
 
-if (obj_pawn_shop_owner.sell_ring == true) {
-    dialog.pop();
-    dialog.add(spr_pawn_shop_dialogue, "A ring, huh... looks pretty decent. I'll give you $150 for it.");
+else if (owner.intro_done == false) {
+    dialog.add(spr_pawn_shop_dialogue, "...You didn't see that, did you? I mean, uh, what can I help you with?");
 }
-if (obj_pawn_shop_owner.sell_watch == true) {
-    dialog.pop();
-    dialog.add(spr_pawn_shop_dialogue, "A watch, huh... I'll give you $75 for it.");
-}
+
+
+    
