@@ -21,3 +21,5 @@ if (room == rm_cleaning) {
 else if (room == rm_fridge_open) {
     sprite_index = four;
 }
+
+flag = true;

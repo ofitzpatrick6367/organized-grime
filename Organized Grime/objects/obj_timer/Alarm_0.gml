@@ -2,6 +2,11 @@ if (sprite_index == zero) {
     if (room == rm_cleaning) {
         obj_minigame_loss.image_alpha = 1;
         obj_mop.image_alpha = 0;
+		audio_stop_sound(snd_minigame);
+		if(flag == true){
+			audio_play_sound(snd_minigame_loss, 0, false, 0.5);
+			flag = false;
+		}
 		
 		if(instance_exists(obj_draggable_parent)){
 			obj_draggable_parent.image_alpha = 0;	

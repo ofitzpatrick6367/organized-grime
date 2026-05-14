@@ -1,4 +1,4 @@
-final_score = 48;
+final_score = 50;
 parent = obj_percentage_parent;
 
 level_end = false;
