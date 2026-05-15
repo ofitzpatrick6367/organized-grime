@@ -1,0 +1,1 @@
+this = obj_pillar_base;

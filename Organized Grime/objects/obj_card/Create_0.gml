@@ -1,5 +1,5 @@
-smiths_1 = spr_card_house1; 
-millers_2 = spr_card_house2;
-mccarthy_3 = spr_card_house3;
+card[0] = spr_card_house1; 
+card[1] = spr_card_house2;
+card[2] = spr_card_house3;
 
-house_num = 1;
+house_num = 0;

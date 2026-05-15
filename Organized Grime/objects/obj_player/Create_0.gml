@@ -37,6 +37,7 @@ bush = obj_bush;
 fence = obj_fence;
 kitchen = obj_minigame_win;
 safe_steal = obj_safe_robbery;
+couch = obj_couch;
 
 // sprites
 

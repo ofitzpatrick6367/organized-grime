@@ -3,7 +3,7 @@
   "%Name":"spr_stair_side",
   "bboxMode":2,
   "bbox_bottom":16,
-  "bbox_left":-6,
+  "bbox_left":0,
   "bbox_right":2,
   "bbox_top":0,
   "collisionKind":1,

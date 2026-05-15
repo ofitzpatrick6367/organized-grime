@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Cards",
-    "path":"folders/Sprites/Cards.yy",
+    "path":"folders/Sprites/House Card/Cards.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
