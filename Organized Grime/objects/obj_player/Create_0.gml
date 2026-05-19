@@ -1,3 +1,5 @@
+depth = 0;
+
 move_speed = 1;
 can_move = true;
 house_1_clean = false;

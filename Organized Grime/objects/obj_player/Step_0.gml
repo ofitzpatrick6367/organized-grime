@@ -4,6 +4,8 @@ if (room == rm_percentage_testing) {
     image_alpha = 0;
 }
 
+if (room == rm_start) room_goto(rm_start);
+
 if (night_time == false) {
     idle_down = spr_player_idle_down;
     idle_left = spr_player_idle_left;

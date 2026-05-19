@@ -3,5 +3,5 @@ if (obj_player.y < this.y){
 }
 
 else if (obj_player.y > this.y){
-	depth = 600;
+	depth = 0;
 }

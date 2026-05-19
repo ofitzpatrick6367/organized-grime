@@ -4,11 +4,12 @@ sprite_index = card[house_num];
 
 
 if (keyboard_check_released(vk_right) and house_num < 2) {
-        house_num++;
+	house_num++;
+
 }
 
 else if (keyboard_check_released(vk_left) and house_num > 0) {
-        house_num--;
+	house_num--;
 }
 
 /* 

@@ -1,3 +1,4 @@
+depth = -2;
 window_set_cursor(cr_none); 
 money = 0;
 this = obj_glove;
