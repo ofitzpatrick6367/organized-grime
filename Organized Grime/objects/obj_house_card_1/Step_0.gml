@@ -9,11 +9,11 @@ if (keyboard_check_released(ord("E"))){
 
 if(image_alpha == 1 && mouse_check_button(mb_left)){
 	
-		sprite_index = spr_house_card;
+		sprite_index = spr_house_card_blank_turn;
 	
 	}
 	
-if (this.sprite_index == spr_house_card){
+if (this.sprite_index == spr_house_card_blank_turn){
 		switch_anim++;
 			
 		if (switch_anim >= 29){

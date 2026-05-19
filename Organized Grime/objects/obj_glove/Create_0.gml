@@ -1,3 +1,4 @@
+depth = -2;
 window_set_cursor(cr_none); 
 this = obj_glove;
 black = obj_black;
