@@ -1,4 +1,5 @@
 window_set_cursor(cr_none); 
+money = 0;
 this = obj_glove;
 black = obj_black;
 house_1_kitchen_clean = false;
@@ -11,5 +12,6 @@ got_note = false;
 end_cutscene = false;
 night_time = false;
 house_1_robbery_success = true;
+sus_score = 0;
 
 interact = [obj_fridge, obj_mess, obj_dog_bed, husband_npc, wife_npc]

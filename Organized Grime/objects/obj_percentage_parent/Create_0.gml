@@ -1,4 +1,30 @@
-final_score = 50;
+final_score = 0;
+
+owner = obj_pawn_shop_owner;
+
+if (owner.money == 0) {
+    final_score = 70;
+}
+
+else if (owner.money == 70) {
+    final_score = 75;
+}
+
+else if (owner.money == 125) {
+    final_score = 86;
+}
+
+else if (owner.money == 150) {
+    final_score = 90;
+}
+
+else if (owner.money == 175) {
+    final_score = 95;
+}
+else if (owner.money == 300) {
+    final_score = 100;
+}
+    
 parent = obj_percentage_parent;
 
 level_end = false;

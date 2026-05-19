@@ -6,19 +6,35 @@ dialog = new Dialogue();
 owner = obj_pawn_shop_owner;
 
 if (owner.watch_sold) {
-    text = "(2)   Leave";
+    text = "(2)   Leave with $" + string(owner.money);
 }
 
 else if (owner.ring_sold) {
-    text = "(2)   Leave";
+    text = "(2)   Leave with $" + string(owner.money);
+}
+
+else if (owner.watch_raise == true) {
+    text = "(2)   Sell";
+}
+
+else if (owner.watch_drop == true) {
+    text = "(2)   Sell";
 }
 
 else if (owner.ring_raise == true) {
     text = "(2)   Sell";
 }
 
+else if (owner.ring_drop == true) {
+    text = "(2)   Sell";
+}
+
 else if (owner.ring_negotiate == true) {
     text = "(2)   As much as you're willing to give me man";
+}
+
+else if (owner.watch_negotiate == true) { 
+    text = "(1)   more than than come on i'm desperate"
 }
 
 else if (owner.sell_watch == true) {
@@ -34,7 +50,7 @@ else if (owner.sell == true) {
 }
 
 else if (owner.intro_done == false) {
-    text = "(2)   Leave";
+    text = "(2)   Leave with $" + string(owner.money);
 }
 
 choice_button = 2;
