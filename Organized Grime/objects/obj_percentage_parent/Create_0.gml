@@ -1,27 +1,30 @@
 final_score = 0;
 
-owner = obj_pawn_shop_owner;
+if (instance_exists(obj_pawn_shop_owner)){
+	pawn_shop_owner = obj_pawn_shop_owner;
+	show_debug_message("WORKS")
+}
 
-if (owner.money == 0) {
+if (pawn_shop_owner.money == 0) {
     final_score = 70;
 }
 
-else if (owner.money == 70) {
+else if (pawn_shop_owner.money == 70) {
     final_score = 75;
 }
 
-else if (owner.money == 125) {
+else if (pawn_shop_owner.money == 125) {
     final_score = 86;
 }
 
-else if (owner.money == 150) {
+else if (pawn_shop_owner.money == 150) {
     final_score = 90;
 }
 
-else if (owner.money == 175) {
+else if (pawn_shop_owner.money == 175) {
     final_score = 95;
 }
-else if (owner.money == 300) {
+else if (pawn_shop_owner.money == 300) {
     final_score = 100;
 }
     

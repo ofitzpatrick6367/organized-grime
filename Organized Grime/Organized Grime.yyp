@@ -376,6 +376,7 @@
     {"id":{"name":"spr_left_arrow_blackout","path":"sprites/spr_left_arrow_blackout/spr_left_arrow_blackout.yy",},},
     {"id":{"name":"spr_left_arrow","path":"sprites/spr_left_arrow/spr_left_arrow.yy",},},
     {"id":{"name":"spr_loading_bar_complete","path":"sprites/spr_loading_bar_complete/spr_loading_bar_complete.yy",},},
+    {"id":{"name":"spr_loading_bar_empty","path":"sprites/spr_loading_bar_empty/spr_loading_bar_empty.yy",},},
     {"id":{"name":"spr_loading_bar","path":"sprites/spr_loading_bar/spr_loading_bar.yy",},},
     {"id":{"name":"spr_mess","path":"sprites/spr_mess/spr_mess.yy",},},
     {"id":{"name":"spr_milk","path":"sprites/spr_milk/spr_milk.yy",},},
@@ -541,6 +542,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_percentage_testing","path":"rooms/rm_percentage_testing/rm_percentage_testing.yy",},},
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},},
     {"roomId":{"name":"level_one_yard","path":"rooms/level_one_yard/level_one_yard.yy",},},
@@ -548,7 +550,6 @@
     {"roomId":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"rm_floor2_night","path":"rooms/rm_floor2_night/rm_floor2_night.yy",},},
-    {"roomId":{"name":"rm_percentage_testing","path":"rooms/rm_percentage_testing/rm_percentage_testing.yy",},},
     {"roomId":{"name":"rm_fridge_open","path":"rooms/rm_fridge_open/rm_fridge_open.yy",},},
     {"roomId":{"name":"level_one_yard","path":"rooms/level_one_yard/level_one_yard.yy",},},
     {"roomId":{"name":"rm_pawn_shop","path":"rooms/rm_pawn_shop/rm_pawn_shop.yy",},},

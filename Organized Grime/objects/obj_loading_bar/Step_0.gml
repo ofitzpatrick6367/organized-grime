@@ -1,0 +1,1 @@
+image_speed = obj_percentage_digit_1.final_score / 80;

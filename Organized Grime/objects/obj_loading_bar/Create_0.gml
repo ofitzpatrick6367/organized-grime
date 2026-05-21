@@ -1,2 +1,3 @@
 this = obj_loading_bar;
-image_alpha = 0;
+sprite_index = spr_loading_bar_empty
+image_alpha = 1;
