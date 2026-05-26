@@ -542,9 +542,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_percentage_testing","path":"rooms/rm_percentage_testing/rm_percentage_testing.yy",},},
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},},
+    {"roomId":{"name":"rm_percentage_testing","path":"rooms/rm_percentage_testing/rm_percentage_testing.yy",},},
     {"roomId":{"name":"level_one_yard","path":"rooms/level_one_yard/level_one_yard.yy",},},
     {"roomId":{"name":"rm_floor2","path":"rooms/rm_floor2/rm_floor2.yy",},},
     {"roomId":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},},
