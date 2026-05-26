@@ -1,5 +1,3 @@
-if (room == rm_floor2_night) room_goto(rm_pawn_shop);
-    
 if (room == rm_percentage_testing) {
     image_alpha = 0;
 }

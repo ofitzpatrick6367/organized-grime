@@ -1,3 +1,5 @@
+room_goto(level_one_yard);
+
 image_alpha = 1;
 obj_smoke_left.image_alpha = 0;
 obj_smoke_right.image_alpha = 1;
