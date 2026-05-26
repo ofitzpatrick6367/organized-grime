@@ -12,7 +12,7 @@ if (image_angle < -350) {
     image_angle = 0;
 }
 
-if (image_angle >= -270 and image_angle <= -180) {
+if (image_angle >= -270 and image_angle <= -180 and instance_exists(obj_quick_marker)) {
     if (pressed == 1 or released == 1) {
         success = true;
         obj_player.robbery_success = true;
